@@ -1,0 +1,157 @@
+# depslib dependency file v1.0
+1476755696 source:/home/daniel/APA/Ordenacao/main.cpp
+	<iostream>
+	<math.h>
+	<ctime>
+	<time.h>
+	<chrono>
+	<random>
+	"util.h"
+	"GeraInstacias.h"
+	"LeituraGravacao.h"
+	"insertionSort.h"
+	"bubbleSort.h"
+	"selectionSort.h"
+	"heapSort.h"
+	"countingSort.h"
+	"radixSort.h"
+
+1476711005 /home/daniel/APA/Ordenacao/util.h
+	<ctime>
+	<unistd.h>
+	<sys/times.h>
+	<vector>
+
+1456868723 source:/home/daniel/APA/Ordenacao/util.cpp
+	"util.h"
+	<climits>
+	<cmath>
+	<cstdlib>
+	<cstdio>
+	<sys/timeb.h>
+	<sys/resource.h>
+	<vector>
+	<iostream>
+
+1476735988 source:/home/daniel/APA/Ordenacao/GeraInstacias.cpp
+	"util.h"
+	"GeraInstacias.h"
+	<iostream>
+	<fstream>
+	<string.h>
+	<sstream>
+	<random>
+
+1476730322 /home/daniel/APA/Ordenacao/GeraInstacias.h
+	<vector>
+	<iostream>
+	<fstream>
+
+1476711083 source:/home/daniel/APA/Ordenacao/bubbleSort.cpp
+	"bubbleSort.h"
+	<vector>
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+	<stdio.h>
+	<stdlib.h>
+
+1476746539 source:/home/daniel/APA/Ordenacao/countingSort.cpp
+	"countingSort.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+	<string.h>
+
+1476743069 source:/home/daniel/APA/Ordenacao/heapSort.cpp
+	"heapSort.h"
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+	<stdio.h>
+	<stdlib.h>
+
+1476713800 source:/home/daniel/APA/Ordenacao/insertionSort.cpp
+	"insertionSort.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+
+1476741651 source:/home/daniel/APA/Ordenacao/LeituraGravacao.cpp
+	"LeituraGravacao.h"
+	<iostream>
+	<fstream>
+	<vector>
+	<string.h>
+	<cstdlib>
+	<dirent.h>
+
+1476741658 /home/daniel/APA/Ordenacao/LeituraGravacao.h
+	<iostream>
+	<fstream>
+	<vector>
+	<string>
+	<cstdlib>
+
+1476646157 source:/home/daniel/APA/Ordenacao/mergeSort.cpp
+
+1476646218 source:/home/daniel/APA/Ordenacao/quickSort.cpp
+
+1476755846 source:/home/daniel/APA/Ordenacao/radixSort.cpp
+	"radixSort.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+	<string.h>
+
+1476713646 source:/home/daniel/APA/Ordenacao/selectionSort.cpp
+	"selectionSort.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<sys/time.h>
+	<vector>
+	<chrono>
+	<ctime>
+
+1476669407 /home/daniel/APA/Ordenacao/insertionSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+
+1476710022 /home/daniel/APA/Ordenacao/bubbleSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+
+1476712571 /home/daniel/APA/Ordenacao/selectionSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+
+1476743029 /home/daniel/APA/Ordenacao/heapSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+
+1476744171 /home/daniel/APA/Ordenacao/countingSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+
+1476755684 /home/daniel/APA/Ordenacao/radixSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+
