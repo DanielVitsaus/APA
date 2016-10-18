@@ -1,6 +1,6 @@
 #include "heapSort.h"
 
-//#include <vector>
+
 #include <time.h>
 #include <sys/time.h>
 #include <chrono>
@@ -26,7 +26,7 @@ void HeapSort::ordena(int * vet, int tam)
         else{
             tam--;
             if (tam == 0)
-                return;
+                break;
             temp = vet[tam];
             vet[tam] = vet[0];
         }

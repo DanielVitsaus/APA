@@ -33,6 +33,7 @@ int main()
     v = legrava->lerArquivo(ar);
 
     v = in->ordena(v, legrava->getTamanhaoArquivo());
+    //in->ordena(v, legrava->getTamanhaoArquivo());
 
     if (legrava->getTamanhaoArquivo() < 10000){
 

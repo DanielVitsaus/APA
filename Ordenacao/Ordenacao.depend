@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1476755696 source:/home/daniel/APA/Ordenacao/main.cpp
+1476759137 source:/home/daniel/APA/Ordenacao/main.cpp
 	<iostream>
 	<math.h>
 	<ctime>
@@ -67,7 +67,7 @@
 	<ctime>
 	<string.h>
 
-1476743069 source:/home/daniel/APA/Ordenacao/heapSort.cpp
+1476759244 source:/home/daniel/APA/Ordenacao/heapSort.cpp
 	"heapSort.h"
 	<time.h>
 	<sys/time.h>
@@ -105,7 +105,7 @@
 
 1476646218 source:/home/daniel/APA/Ordenacao/quickSort.cpp
 
-1476755846 source:/home/daniel/APA/Ordenacao/radixSort.cpp
+1476758271 source:/home/daniel/APA/Ordenacao/radixSort.cpp
 	"radixSort.h"
 	<stdio.h>
 	<stdlib.h>
@@ -140,7 +140,7 @@
 	<chrono>
 	<ctime>
 
-1476743029 /home/daniel/APA/Ordenacao/heapSort.h
+1476759224 /home/daniel/APA/Ordenacao/heapSort.h
 	<time.h>
 	<chrono>
 	<ctime>
