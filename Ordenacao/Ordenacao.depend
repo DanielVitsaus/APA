@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1476759137 source:/home/daniel/APA/Ordenacao/main.cpp
+1476844124 source:/home/daniel/APA/Ordenacao/main.cpp
 	<iostream>
 	<math.h>
 	<ctime>
@@ -15,6 +15,8 @@
 	"heapSort.h"
 	"countingSort.h"
 	"radixSort.h"
+	"mergeSort.h"
+	"quickSort.h"
 
 1476711005 /home/daniel/APA/Ordenacao/util.h
 	<ctime>
@@ -47,7 +49,7 @@
 	<iostream>
 	<fstream>
 
-1476711083 source:/home/daniel/APA/Ordenacao/bubbleSort.cpp
+1476812894 source:/home/daniel/APA/Ordenacao/bubbleSort.cpp
 	"bubbleSort.h"
 	<vector>
 	<time.h>
@@ -57,7 +59,7 @@
 	<stdio.h>
 	<stdlib.h>
 
-1476746539 source:/home/daniel/APA/Ordenacao/countingSort.cpp
+1476828122 source:/home/daniel/APA/Ordenacao/countingSort.cpp
 	"countingSort.h"
 	<stdio.h>
 	<stdlib.h>
@@ -67,7 +69,7 @@
 	<ctime>
 	<string.h>
 
-1476759244 source:/home/daniel/APA/Ordenacao/heapSort.cpp
+1476828554 source:/home/daniel/APA/Ordenacao/heapSort.cpp
 	"heapSort.h"
 	<time.h>
 	<sys/time.h>
@@ -76,7 +78,7 @@
 	<stdio.h>
 	<stdlib.h>
 
-1476713800 source:/home/daniel/APA/Ordenacao/insertionSort.cpp
+1476812789 source:/home/daniel/APA/Ordenacao/insertionSort.cpp
 	"insertionSort.h"
 	<stdio.h>
 	<stdlib.h>
@@ -101,11 +103,28 @@
 	<string>
 	<cstdlib>
 
-1476646157 source:/home/daniel/APA/Ordenacao/mergeSort.cpp
+1476843270 source:/home/daniel/APA/Ordenacao/mergeSort.cpp
+	"mergeSort.h"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+	<string.h>
 
-1476646218 source:/home/daniel/APA/Ordenacao/quickSort.cpp
+1476844043 source:/home/daniel/APA/Ordenacao/quickSort.cpp
+	"quickSort.h"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
 
-1476758271 source:/home/daniel/APA/Ordenacao/radixSort.cpp
+1476828877 source:/home/daniel/APA/Ordenacao/radixSort.cpp
 	"radixSort.h"
 	<stdio.h>
 	<stdlib.h>
@@ -115,7 +134,7 @@
 	<ctime>
 	<string.h>
 
-1476713646 source:/home/daniel/APA/Ordenacao/selectionSort.cpp
+1476828971 source:/home/daniel/APA/Ordenacao/selectionSort.cpp
 	"selectionSort.h"
 	<stdio.h>
 	<stdlib.h>
@@ -125,33 +144,65 @@
 	<chrono>
 	<ctime>
 
-1476669407 /home/daniel/APA/Ordenacao/insertionSort.h
+1476812810 /home/daniel/APA/Ordenacao/insertionSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+
+1476812882 /home/daniel/APA/Ordenacao/bubbleSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+
+1476828996 /home/daniel/APA/Ordenacao/selectionSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+
+1476828538 /home/daniel/APA/Ordenacao/heapSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+
+1476828147 /home/daniel/APA/Ordenacao/countingSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+
+1476828673 /home/daniel/APA/Ordenacao/radixSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+
+1476829477 /home/daniel/APA/Ordenacao/Ordenacao.h
 	<time.h>
 	<chrono>
 	<ctime>
 
-1476710022 /home/daniel/APA/Ordenacao/bubbleSort.h
+1476829477 source:/home/daniel/APA/Ordenacao/Ordenacao.cpp
+	"Ordenacao.h"
 	<time.h>
+	<sys/time.h>
 	<chrono>
 	<ctime>
+	<stdio.h>
+	<stdlib.h>
 
-1476712571 /home/daniel/APA/Ordenacao/selectionSort.h
+1476841186 /home/daniel/APA/Ordenacao/mergeSort.h
 	<time.h>
 	<chrono>
 	<ctime>
+	"Ordenacao.h"
 
-1476759224 /home/daniel/APA/Ordenacao/heapSort.h
+1476844016 /home/daniel/APA/Ordenacao/quickSort.h
 	<time.h>
 	<chrono>
 	<ctime>
-
-1476744171 /home/daniel/APA/Ordenacao/countingSort.h
-	<time.h>
-	<chrono>
-	<ctime>
-
-1476755684 /home/daniel/APA/Ordenacao/radixSort.h
-	<time.h>
-	<chrono>
-	<ctime>
+	"Ordenacao.h"
 

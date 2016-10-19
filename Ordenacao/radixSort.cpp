@@ -12,7 +12,7 @@
 using namespace std;
 
 
-int* RadixSort::ordena(int * vet, int tam)
+void RadixSort::ordena(int * vet, int tam)
 {
     this->start_time = chrono::system_clock::now();
 
@@ -57,37 +57,6 @@ int* RadixSort::ordena(int * vet, int tam)
     }
 
     this->end_time = chrono::system_clock::now();
-
-    return this->vetOrdenado;
+    free(this->vetOrdenado);
 
 }
-
-
-int RadixSort::getNumInstrucao()
-{
-    return this->numInstrucao;
-}
-
-float RadixSort::getTimeSpent()
-{
-    //return (float) (1000 * (this->getTimeEnd().tv_sec - this->getTimeBegin().tv_sec) + (this->getTimeEnd().tv_usec - this->getTimeBegin().tv_usec) / 1000);
-    return (float) (chrono::duration_cast<chrono::nanoseconds> (this->end_time - this->start_time).count() );
-}
-
-
-chrono::time_point<chrono::system_clock> RadixSort::getStartTime()
-{
-    return this->start_time;
-}
-
-chrono::time_point<chrono::system_clock> RadixSort::getEndTime()
-{
-    return this->end_time;
-}
-
-time_t RadixSort::getDate()
-{
-    this->end_timeF = chrono::system_clock::to_time_t(this->end_time);
-    return this->end_timeF;
-}
-

@@ -29,30 +29,3 @@ void BubbleSort::ordena(int * vet, int tam)
 
 }
 
-
-int BubbleSort::getNumInstrucao()
-{
-    return this->numInstrucao;
-}
-
-float BubbleSort::getTimeSpent()
-{
-    return (float) (chrono::duration_cast<chrono::nanoseconds> (this->end_time - this->start_time).count() );
-}
-
-
-chrono::time_point<chrono::system_clock> BubbleSort::getStartTime()
-{
-    return this->start_time;
-}
-
-chrono::time_point<chrono::system_clock> BubbleSort::getEndTime()
-{
-    return this->end_time;
-}
-
-time_t BubbleSort::getDate()
-{
-    this->end_timeF = chrono::system_clock::to_time_t(this->end_time);
-    return this->end_timeF;
-}

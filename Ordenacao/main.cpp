@@ -14,6 +14,8 @@
 #include "heapSort.h"
 #include "countingSort.h"
 #include "radixSort.h"
+#include "mergeSort.h"
+#include "quickSort.h"
 
 using namespace std;
 
@@ -26,13 +28,14 @@ int main()
 
     LeituraGravacao* legrava = new LeituraGravacao();
 
-    RadixSort* in = new RadixSort();
+    QuickSort* in = new QuickSort();
 
     char ar[30] = "instancia_100_CR.txt";
     int *v = NULL;
     v = legrava->lerArquivo(ar);
 
-    v = in->ordena(v, legrava->getTamanhaoArquivo());
+    in->ordena(v, legrava->getTamanhaoArquivo(), 1);
+
     //in->ordena(v, legrava->getTamanhaoArquivo());
 
     if (legrava->getTamanhaoArquivo() < 10000){
@@ -42,7 +45,7 @@ int main()
         }
     }
 
-    printf ("\nTempo de execulção ->  %f\n", in->getTimeSpent() / 1000000000);
+    printf ("\nTempo de execulção ->  %f\n", in->getTimeSpent());
     time_t te = in->getDate();
     cout << "\nData da execulção -> " << ctime(&te) << endl;
     cout << "\nTipo da instacia -> " << legrava->getTipoInstacia() << endl;

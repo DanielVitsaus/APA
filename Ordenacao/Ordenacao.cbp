@@ -36,6 +36,8 @@
 		<Unit filename="GeraInstacias.h" />
 		<Unit filename="LeituraGravacao.cpp" />
 		<Unit filename="LeituraGravacao.h" />
+		<Unit filename="Ordenacao.cpp" />
+		<Unit filename="Ordenacao.h" />
 		<Unit filename="bubbleSort.cpp" />
 		<Unit filename="bubbleSort.h" />
 		<Unit filename="countingSort.cpp" />

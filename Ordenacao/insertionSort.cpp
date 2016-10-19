@@ -31,31 +31,3 @@ void InsertonSort::ordena(int * vet, int tam)
 }
 
 
-int InsertonSort::getNumInstrucao()
-{
-    return this->numInstrucao;
-}
-
-float InsertonSort::getTimeSpent()
-{
-    //return (float) (1000 * (this->getTimeEnd().tv_sec - this->getTimeBegin().tv_sec) + (this->getTimeEnd().tv_usec - this->getTimeBegin().tv_usec) / 1000);
-    return (float) (chrono::duration_cast<chrono::nanoseconds> (this->end_time - this->start_time).count() );
-}
-
-
-chrono::time_point<chrono::system_clock> InsertonSort::getStartTime()
-{
-    return this->start_time;
-}
-
-chrono::time_point<chrono::system_clock> InsertonSort::getEndTime()
-{
-    return this->end_time;
-}
-
-time_t InsertonSort::getDate()
-{
-    this->end_timeF = chrono::system_clock::to_time_t(this->end_time);
-    return this->end_timeF;
-}
-

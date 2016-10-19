@@ -12,7 +12,7 @@
 using namespace std;
 
 
-int* CountingSort::ordena(int * vet, int tam)
+void CountingSort::ordena(int * vet, int tam)
 {
     this->start_time = chrono::system_clock::now();
 
@@ -37,41 +37,16 @@ int* CountingSort::ordena(int * vet, int tam)
         this->vetAXU[vet[i]]--;
     }
 
+    for (int i = 0; i < tam; i++){
+        vet[i] = this->vetOrdenado[i];
+    }
+
 
     this->end_time = chrono::system_clock::now();
 
     free(this->vetAXU);
-
-    return this->vetOrdenado;
+    free(this->vetOrdenado);
 
 }
 
-
-int CountingSort::getNumInstrucao()
-{
-    return this->numInstrucao;
-}
-
-float CountingSort::getTimeSpent()
-{
-    //return (float) (1000 * (this->getTimeEnd().tv_sec - this->getTimeBegin().tv_sec) + (this->getTimeEnd().tv_usec - this->getTimeBegin().tv_usec) / 1000);
-    return (float) (chrono::duration_cast<chrono::nanoseconds> (this->end_time - this->start_time).count() );
-}
-
-
-chrono::time_point<chrono::system_clock> CountingSort::getStartTime()
-{
-    return this->start_time;
-}
-
-chrono::time_point<chrono::system_clock> CountingSort::getEndTime()
-{
-    return this->end_time;
-}
-
-time_t CountingSort::getDate()
-{
-    this->end_timeF = chrono::system_clock::to_time_t(this->end_time);
-    return this->end_timeF;
-}
 
