@@ -12,8 +12,8 @@ class MergeSort  : public Ordenacao
 {
     private:
 
-        void mergeSortSimples(int* vet, int tam);
-        void mergeSimple(int* vet, int tam);
+        void mergeSortSimples(int* vet, int tam, int* temp);
+        void mergeSimple(int* vet, int tam, int* tem);
 
         //void mergeSortAlocacao(int * vet, int tam);
 

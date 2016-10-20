@@ -25,6 +25,7 @@ class LeituraGravacao
         int getTamanhaoArquivo(){ return tamanhoArquivo; };
         int* lerArquivo(char *ar);
         vector<char*> listaArquivos();
+        void grava(int* vet, int tam);
         //void gravaArquivoResultado(char* nomArquivo, string reslutado);
         //void gravaArquivo(Grafo *g, char* nomArquivo,int nVertice, int nAresta, float grauMedio);
 

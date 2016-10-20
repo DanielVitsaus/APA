@@ -15,25 +15,36 @@ using namespace std;
 
 void MergeSort::ordena(int* vet, int tam, int versao){
 
+    int* temp;
+
     switch(versao){
 
         case 1:
             this->start_time = chrono::system_clock::now();
-            this->mergeSortSimples(vet, tam);
+
+            this->mergeSortSimples(vet, tam, NULL);
             this->end_time = chrono::system_clock::now();
             break;
 
         case 2:
             this->start_time = chrono::system_clock::now();
-            //this->mergeSortSimples(vet, tam);
-            this->end_time = chrono::system_clock::now();
-            break;
+            temp = (int*) malloc(tam * sizeof(int));
+            if (temp != NULL){
+                this->mergeSortSimples(vet, tam, temp);
+            }else{
+                cout << "\nNão deu cara!\n" << endl;
+            }
 
+            this->end_time = chrono::system_clock::now();
+            free(temp);
+            break;
+        /*
         case 3:
             this->start_time = chrono::system_clock::now();
             //this->mergeSortSimples(vet, tam);
             this->end_time = chrono::system_clock::now();
             break;
+        */
 
         default:
             cout << "Escolha uma das três opções:\n  1 , 2 ou 3 !\n " << endl;
@@ -42,12 +53,18 @@ void MergeSort::ordena(int* vet, int tam, int versao){
 }
 
 
-void MergeSort::mergeSimple(int* vet, int tam){
+void MergeSort::mergeSimple(int* vet, int tam, int* tem){
 
     int middle = 0, i = 0, j = 0, k = 0;
     int* temp;
 
-    temp = (int*) malloc(tam * sizeof(int));
+    if (tem == NULL){
+        temp = (int*) malloc(tam * sizeof(int));
+    }
+    else{
+        temp = tem;
+    }
+
 
     if (temp == NULL){
         exit(1);
@@ -94,14 +111,18 @@ void MergeSort::mergeSimple(int* vet, int tam){
 }
 
 
-void MergeSort::mergeSortSimples(int* vet, int tam){
+void MergeSort::mergeSortSimples(int* vet, int tam, int* tem){
 
     int middle;
+    int* temp = NULL;
     if ( tam > 1){
         middle = tam / 2;
-        this->mergeSortSimples(vet, middle);
-        this->mergeSortSimples(vet + middle, tam - middle);
-        this->mergeSimple(vet, tam);
+        if (tem != NULL){
+            temp = (int*) malloc(tam * sizeof(int));
+        }
+        this->mergeSortSimples(vet, middle, temp);
+        this->mergeSortSimples(vet + middle, tam - middle, temp);
+        this->mergeSimple(vet, tam, temp);
     }
 
 }

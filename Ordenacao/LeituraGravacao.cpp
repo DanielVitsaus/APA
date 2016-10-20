@@ -102,6 +102,17 @@ int* LeituraGravacao::lerArquivo(char *ar)
     return this->vetor;
 }
 
+void LeituraGravacao::grava(int* vet, int tam){
+
+    char diretorio[100] = "arquivos_gerados//teste.txt";
+
+    this->arquivoGravacao.open(diretorio, ios::trunc);
+
+    for(int i = 0; i < tam; i++){
+        this->arquivoGravacao << vet[i] << endl;
+    }
+    this->arquivoGravacao.close();
+}
 
 /** \brief Funcao que gera um aquirvo com as informacoes do grafo G como frequencia de cada vertice, quantos vertice,
  *         quantas arestas e o grau medio de cada vertice.

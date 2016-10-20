@@ -21,22 +21,32 @@ using namespace std;
 
 void geraInstacias();
 
+#define UART_TXBUF ((volatile uint32_t*) 0xfffe0004)
 
 int main()
 {
+
     //geraInstacias();
+
 
     LeituraGravacao* legrava = new LeituraGravacao();
 
-    QuickSort* in = new QuickSort();
+    InsertonSort* in = new InsertonSort();
 
-    char ar[30] = "instancia_100_CR.txt";
+    char ar[30] = "instancia_10_CR.txt";
+
     int *v = NULL;
     v = legrava->lerArquivo(ar);
 
-    in->ordena(v, legrava->getTamanhaoArquivo(), 1);
-
-    //in->ordena(v, legrava->getTamanhaoArquivo());
+    cout << "Ordenado... \n" << endl;
+    //in->ordena(v, legrava->getTamanhaoArquivo(), 2);
+    in->ordena( v, legrava->getTamanhaoArquivo());
+    cout << "Oerdenação concluida! \n\n" << endl;
+    /*
+    cout << "Gravando... \n" << endl;
+    legrava->grava(v, legrava->getTamanhaoArquivo());
+    cout << "Gravação concluida! \n" << endl;
+    */
 
     if (legrava->getTamanhaoArquivo() < 10000){
 
@@ -45,10 +55,13 @@ int main()
         }
     }
 
-    printf ("\nTempo de execulção ->  %f\n", in->getTimeSpent());
+    printf ("\nTempo de execulção ->  %f8\n", in->getTimeSpent());
+
     time_t te = in->getDate();
     cout << "\nData da execulção -> " << ctime(&te) << endl;
     cout << "\nTipo da instacia -> " << legrava->getTipoInstacia() << endl;
+
+    cout << "\nNumero de instruções -> " << in->getNumInstrucao() << endl;
 
     free(v);
     free(legrava);

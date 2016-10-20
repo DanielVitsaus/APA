@@ -1,7 +1,7 @@
 #ifndef QUICKSORT_H_INCLUDED
 #define QUICKSORT_H_INCLUDED
 
-#include <time.h>
+//#include <time.h>
 #include <chrono>
 #include <ctime>
 #include "Ordenacao.h"
