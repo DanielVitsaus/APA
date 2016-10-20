@@ -8,7 +8,7 @@
 
 using namespace std;
 
-class GeraInstacias
+class GeraInstancias
 {
 
     private:
@@ -16,7 +16,7 @@ class GeraInstacias
         vector<int> valores;
 
     public:
-        GeraInstacias();
+        GeraInstancias();
         void ordenCrescente(int tam);
         void ordenDecrecente(int tam);
         void comRepeticao(int tam);

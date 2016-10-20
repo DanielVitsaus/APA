@@ -13,7 +13,10 @@ class BubbleSort  : public Ordenacao
     private:
         bool troca;
 
+        void swapB(int* a, int* b);
+
     public:
+        BubbleSort(){ idAlgoritmo = 1; };
         void ordena(int * vet, int tam);
 
 };

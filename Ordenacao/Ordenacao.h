@@ -15,14 +15,17 @@ using namespace std;
 
 class Ordenacao
 {
-    private:
-        //int numInstrucao;
 
     protected:
         chrono::time_point<chrono::system_clock> start_time;
         chrono::time_point<chrono::system_clock> end_time;
         time_t end_timeF;
+        int idAlgoritmo;
         int numInstrucao;
+        int tamanhoInstancia;
+        char* nomeInstancia;
+        char* tipoInstancia;
+        char* nomeAlgoritmo;
 
     public:
         //void ordena(int * vet, int tam);
@@ -30,8 +33,17 @@ class Ordenacao
         chrono::time_point<chrono::system_clock> getStartTime();
         chrono::time_point<chrono::system_clock> getEndTime();
         time_t getDate();
+        int getIDAlgoritmo(){ return idAlgoritmo; };
         int getNumInstrucao();
-        float getTimeSpent();
+        float getRunTime();
+        void setNomeInstancia(char* nome){ nomeInstancia = nome; };
+        void setTipoInstancia(char* tipo){ tipoInstancia = tipo; };
+        void setNomeAlgoritmo(char* nome){ nomeAlgoritmo = nome; };
+        void setTamanhoInstancia(int tam){ tamanhoInstancia = tam; };
+        int getTamanhoInstancia() { return tamanhoInstancia; };
+        char* getNomeInstancia(){ return nomeInstancia; };
+        char* getTipoInstancia(){ return tipoInstancia; };
+        char* getNomeAlgoritmo(){ return nomeAlgoritmo; };
 
 };
 

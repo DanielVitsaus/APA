@@ -15,6 +15,7 @@ class InsertonSort : public Ordenacao
         int pivo;
 
     public:
+        InsertonSort(){ idAlgoritmo = 4; };
         void ordena(int * vet, int tam);
 };
 

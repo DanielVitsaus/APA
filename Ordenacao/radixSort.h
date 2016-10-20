@@ -17,6 +17,7 @@ class RadixSort : public Ordenacao
         int exp;
 
     public:
+        RadixSort(){ idAlgoritmo = 10; };
         void ordena(int* vet, int tam);
 };
 

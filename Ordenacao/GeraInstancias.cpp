@@ -1,5 +1,5 @@
 #include "util.h"
-#include "GeraInstacias.h"
+#include "GeraInstancias.h"
 
 #include <iostream>
 #include <fstream>
@@ -9,7 +9,7 @@
 
 using namespace std;
 
-GeraInstacias::GeraInstacias()
+GeraInstancias::GeraInstancias()
 {
     random_device r;
     seed_seq seed2{ ((unsigned int)( time((time_t *)NULL) )) * r(),
@@ -28,7 +28,7 @@ GeraInstacias::GeraInstacias()
     setSeed(gen());
 }
 
-void GeraInstacias::ordenCrescente(int tam){
+void GeraInstancias::ordenCrescente(int tam){
 
 
     char diretorio[100] = "Instancias//instancia_";
@@ -60,7 +60,7 @@ void GeraInstacias::ordenCrescente(int tam){
 }
 
 
-void GeraInstacias::ordenDecrecente(int tam){
+void GeraInstancias::ordenDecrecente(int tam){
 
     char diretorio[100] = "Instancias//instancia_";
     string Result;
@@ -90,7 +90,7 @@ void GeraInstacias::ordenDecrecente(int tam){
 }
 
 
-void GeraInstacias::comRepeticao(int tam){
+void GeraInstancias::comRepeticao(int tam){
 
     //random_device r;
 
@@ -131,7 +131,7 @@ void GeraInstacias::comRepeticao(int tam){
 }
 
 
-void GeraInstacias::semRepeticao(int tam){
+void GeraInstancias::semRepeticao(int tam){
 
     char diretorio[100] = "Instancias//instancia_";
     string Result;

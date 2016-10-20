@@ -24,8 +24,7 @@ void InsertonSort::ordena(int * vet, int tam)
 
         this->pivo = vet[i];
         j = i -1;
-        instrucoes += 4;
-        instrucoes += 3;
+        instrucoes += 8;
         while(j >= 0 && vet[j] > this->pivo){
             vet[j+1] = vet[j];
             j = j - 1;

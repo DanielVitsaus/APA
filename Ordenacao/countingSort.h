@@ -15,6 +15,7 @@ class CountingSort : public Ordenacao
         int* vetOrdenado;
 
     public:
+        CountingSort(){ idAlgoritmo = 2; };
         void ordena(int* vet, int tam);
 
 };

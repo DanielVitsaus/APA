@@ -15,6 +15,7 @@ class HeapSort : public Ordenacao
 
 
     public:
+        HeapSort(){ idAlgoritmo = 3; };
         void ordena(int * vet, int tam);
 
 

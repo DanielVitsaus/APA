@@ -14,28 +14,33 @@ using namespace std;
 
 void QuickSort::ordena(int* vet, int tam, int versao){
 
+
     switch(versao){
 
         case 1:
             this->start_time = chrono::system_clock::now();
+            this->setIDAlgoritmo(7);
             this->quickSortSimples(vet, 0, tam-1);
             this->end_time = chrono::system_clock::now();
             break;
 
         case 2:
             this->start_time = chrono::system_clock::now();
+            this->setIDAlgoritmo(8);
             //this->mergeSortSimples(vet, tam);
             this->end_time = chrono::system_clock::now();
             break;
 
         case 3:
             this->start_time = chrono::system_clock::now();
+            this->setIDAlgoritmo(9);
             //this->mergeSortSimples(vet, tam);
             this->end_time = chrono::system_clock::now();
             break;
 
         case 4:
             this->start_time = chrono::system_clock::now();
+            this->setIDAlgoritmo(12);
             //this->mergeSortSimples(vet, tam);
             this->end_time = chrono::system_clock::now();
             break;
@@ -46,7 +51,7 @@ void QuickSort::ordena(int* vet, int tam, int versao){
 
 }
 
-void QuickSort::swap(int* a, int* b) {
+void QuickSort::swapQ(int* a, int* b) {
 
     int tmp;
     tmp = *a;
@@ -61,10 +66,10 @@ int QuickSort::partitionSimple(int* vet, int left, int right) {
   for (j = left + 1; j <= right; ++j) {
     if (vet[j] < vet[left]) {
       ++i;
-      swap(&vet[i], &vet[j]);
+      swapQ(&vet[i], &vet[j]);
     }
   }
-  swap(&vet[left], &vet[i]);
+  swapQ(&vet[left], &vet[i]);
 
   return i;
 }

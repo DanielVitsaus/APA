@@ -18,7 +18,7 @@ int Ordenacao::getNumInstrucao()
     return this->numInstrucao;
 }
 
-float Ordenacao::getTimeSpent()
+float Ordenacao::getRunTime()
 {
 
     return ( ( (float) (chrono::duration_cast<chrono::nanoseconds> (this->end_time - this->start_time).count() ) ) / 1000000000 );

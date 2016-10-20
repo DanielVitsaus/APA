@@ -14,6 +14,7 @@ class SelectionSort : public Ordenacao
         int imv;
 
     public:
+        SelectionSort(){ idAlgoritmo = 11; };
         void ordena(int * vet, int tam);
 
 };

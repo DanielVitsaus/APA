@@ -11,7 +11,7 @@ using namespace std;
 class QuickSort  : public Ordenacao
 {
     private:
-        void swap(int* a, int* b);
+        void swapQ(int* a, int* b);
         void quickSortSimples(int* vet, int left, int right);
         int partitionSimple(int* vet, int left, int right);
 
@@ -19,6 +19,7 @@ class QuickSort  : public Ordenacao
 
         //void mergeSortParametroAd(int * vet, int tam);
 
+        void setIDAlgoritmo(int num){ idAlgoritmo = num; };
 
     public:
         void ordena(int * vet, int tam, int versao);

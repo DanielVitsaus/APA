@@ -6,7 +6,7 @@
 #include <random>
 
 #include "util.h"
-#include "GeraInstacias.h"
+#include "GeraInstancias.h"
 #include "LeituraGravacao.h"
 #include "insertionSort.h"
 #include "bubbleSort.h"
@@ -19,29 +19,33 @@
 
 using namespace std;
 
-void geraInstacias();
+void geraInstancias();
 
 #define UART_TXBUF ((volatile uint32_t*) 0xfffe0004)
 
 int main()
 {
 
-    //geraInstacias();
+    //geraInstancias();
 
 
     LeituraGravacao* legrava = new LeituraGravacao();
 
-    InsertonSort* in = new InsertonSort();
+    Ordenacao* ordenaca = new Ordenacao();
+
+    BubbleSort* in = new BubbleSort();
 
     char ar[30] = "instancia_10_CR.txt";
 
     int *v = NULL;
     v = legrava->lerArquivo(ar);
 
+    ordenaca = in;
     cout << "Ordenado... \n" << endl;
     //in->ordena(v, legrava->getTamanhaoArquivo(), 2);
-    in->ordena( v, legrava->getTamanhaoArquivo());
-    cout << "Oerdenação concluida! \n\n" << endl;
+    //in->ordena( v, legrava->getTamanhaoArquivo());
+    ((BubbleSort*)ordenaca)->ordena( v, legrava->getTamanhaoArquivo());
+    cout << "Oerdenação concluida! \n\n "  << endl;
     /*
     cout << "Gravando... \n" << endl;
     legrava->grava(v, legrava->getTamanhaoArquivo());
@@ -55,7 +59,7 @@ int main()
         }
     }
 
-    printf ("\nTempo de execulção ->  %f8\n", in->getTimeSpent());
+    printf ("\nTempo de execulção ->  %f8\n", in->getRunTime());
 
     time_t te = in->getDate();
     cout << "\nData da execulção -> " << ctime(&te) << endl;
@@ -70,9 +74,9 @@ int main()
     return 0;
 }
 
-void geraInstacias()
+void geraInstancias()
 {
-    GeraInstacias *gera = new GeraInstacias();
+    GeraInstancias *gera = new GeraInstancias();
 
     cout << "Gerando instacais de tamanho 10:" << endl;
     cout << " -> Com repeticao..." << endl;
