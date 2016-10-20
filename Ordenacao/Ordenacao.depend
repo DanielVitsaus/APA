@@ -206,3 +206,210 @@
 	<ctime>
 	"Ordenacao.h"
 
+1476874864 source:/home/danielcandido/UFJF/APA/Ordenacao/bubbleSort.cpp
+	"bubbleSort.h"
+	<vector>
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+	<stdio.h>
+	<stdlib.h>
+
+1476874864 /home/danielcandido/UFJF/APA/Ordenacao/bubbleSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+
+1476874864 /home/danielcandido/UFJF/APA/Ordenacao/Ordenacao.h
+	<time.h>
+	<chrono>
+	<ctime>
+
+1476874864 source:/home/danielcandido/UFJF/APA/Ordenacao/countingSort.cpp
+	"countingSort.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+	<string.h>
+
+1476874864 /home/danielcandido/UFJF/APA/Ordenacao/countingSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+
+1476874864 source:/home/danielcandido/UFJF/APA/Ordenacao/GeraInstacias.cpp
+	"util.h"
+	"GeraInstacias.h"
+	<iostream>
+	<fstream>
+	<string.h>
+	<sstream>
+	<random>
+
+1476874864 /home/danielcandido/UFJF/APA/Ordenacao/util.h
+	<ctime>
+	<unistd.h>
+	<sys/times.h>
+	<vector>
+
+1476874864 /home/danielcandido/UFJF/APA/Ordenacao/GeraInstacias.h
+	<vector>
+	<iostream>
+	<fstream>
+
+1476874864 source:/home/danielcandido/UFJF/APA/Ordenacao/heapSort.cpp
+	"heapSort.h"
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+	<stdio.h>
+	<stdlib.h>
+
+1476874864 /home/danielcandido/UFJF/APA/Ordenacao/heapSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+
+1476874864 source:/home/danielcandido/UFJF/APA/Ordenacao/insertionSort.cpp
+	"insertionSort.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+
+1476874864 /home/danielcandido/UFJF/APA/Ordenacao/insertionSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+
+1476874864 source:/home/danielcandido/UFJF/APA/Ordenacao/LeituraGravacao.cpp
+	"LeituraGravacao.h"
+	<iostream>
+	<fstream>
+	<vector>
+	<string.h>
+	<cstdlib>
+	<dirent.h>
+
+1476874864 /home/danielcandido/UFJF/APA/Ordenacao/LeituraGravacao.h
+	<iostream>
+	<fstream>
+	<vector>
+	<string>
+	<cstdlib>
+
+1476874864 source:/home/danielcandido/UFJF/APA/Ordenacao/main.cpp
+	<iostream>
+	<math.h>
+	<ctime>
+	<time.h>
+	<chrono>
+	<random>
+	"util.h"
+	"GeraInstacias.h"
+	"LeituraGravacao.h"
+	"insertionSort.h"
+	"bubbleSort.h"
+	"selectionSort.h"
+	"heapSort.h"
+	"countingSort.h"
+	"radixSort.h"
+	"mergeSort.h"
+	"quickSort.h"
+
+1476874864 /home/danielcandido/UFJF/APA/Ordenacao/selectionSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+
+1476874864 /home/danielcandido/UFJF/APA/Ordenacao/radixSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+
+1476874864 /home/danielcandido/UFJF/APA/Ordenacao/mergeSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+
+1476874864 /home/danielcandido/UFJF/APA/Ordenacao/quickSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+
+1476874864 source:/home/danielcandido/UFJF/APA/Ordenacao/mergeSort.cpp
+	"mergeSort.h"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+	<string.h>
+
+1476874864 source:/home/danielcandido/UFJF/APA/Ordenacao/Ordenacao.cpp
+	"Ordenacao.h"
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+	<stdio.h>
+	<stdlib.h>
+
+1476874864 source:/home/danielcandido/UFJF/APA/Ordenacao/quickSort.cpp
+	"quickSort.h"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+
+1476874864 source:/home/danielcandido/UFJF/APA/Ordenacao/radixSort.cpp
+	"radixSort.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+	<string.h>
+
+1476874864 source:/home/danielcandido/UFJF/APA/Ordenacao/selectionSort.cpp
+	"selectionSort.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<sys/time.h>
+	<vector>
+	<chrono>
+	<ctime>
+
+1476874864 source:/home/danielcandido/UFJF/APA/Ordenacao/util.cpp
+	"util.h"
+	<climits>
+	<cmath>
+	<cstdlib>
+	<cstdio>
+	<sys/timeb.h>
+	<sys/resource.h>
+	<vector>
+	<iostream>
+

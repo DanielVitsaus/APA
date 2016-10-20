@@ -28,4 +28,7 @@
 *.out
 *.app
 
+Ordenacao/Ordenacao.depend
+Ordenacao/Ordenacao.layout
+Ordenacao/bin*
 Ordenacao/Instancias/*.txt
