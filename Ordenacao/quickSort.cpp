@@ -3,10 +3,10 @@
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+//#include <time.h>
 #include <sys/time.h>
-#include <chrono>
-#include <ctime>
+//#include <chrono>
+//#include <ctime>
 
 
 using namespace std;
@@ -71,10 +71,10 @@ int QuickSort::partitionSimple(int* vet, int left, int right) {
 
 void QuickSort::quickSortSimples(int* vet, int left, int right) {
 
-  int r;
-  if (right > left) {
-    r = this->partitionSimple(vet, left, right);
-    this->quickSortSimples(vet, left, r - 1);
-    this->quickSortSimples(vet, r + 1, right);
-  }
+    int r;
+    if (right > left) {
+        r = this->partitionSimple(vet, left, right);
+        this->quickSortSimples(vet, left, r - 1);
+        this->quickSortSimples(vet, r + 1, right);
+    }
 }

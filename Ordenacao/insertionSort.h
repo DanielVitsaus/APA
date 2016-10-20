@@ -1,6 +1,7 @@
 #ifndef INSERTIONSORT_H_INCLUDED
 #define INSERTIONSORT_H_INCLUDED
 
+#include <iostream>
 #include <time.h>
 #include <chrono>
 #include <ctime>
