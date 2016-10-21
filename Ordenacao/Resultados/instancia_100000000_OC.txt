@@ -33,3 +33,10 @@ Algoritmo -> RadixSort
    Numero de instruções -> 19800000789
    Data da execução -> Fri Oct 21 07:48:46 2016
 ---------------------------------------------------------------------------------------------------
+Algoritmo -> BubbleSort
+   Tamanho -> 100000000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.21008839
+   Numero de instruções -> 599999998
+   Data da execução -> Fri Oct 21 09:28:12 2016
+---------------------------------------------------------------------------------------------------

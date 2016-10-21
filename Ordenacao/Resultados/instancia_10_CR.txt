@@ -33,3 +33,52 @@ Algoritmo -> RadixSort
    Numero de instruções -> 666
    Data da execução -> Fri Oct 21 07:48:46 2016
 ---------------------------------------------------------------------------------------------------
+Algoritmo -> InsertonSort
+   Tamanho -> 10
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 0.00000044
+   Numero de instruções -> 265
+   Data da execução -> Fri Oct 21 09:11:36 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> SelectionSort
+   Tamanho -> 10
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 0.00000063
+   Numero de instruções -> 0
+   Data da execução -> Fri Oct 21 09:12:04 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> BubbleSort
+   Tamanho -> 10
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 0.00000080
+   Numero de instruções -> 756
+   Data da execução -> Fri Oct 21 09:20:54 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort_MEDPE
+   Tamanho -> 10
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 0.00000070
+   Numero de instruções -> 243
+   Data da execução -> Fri Oct 21 16:17:43 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort_MEPEPC
+   Tamanho -> 10
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 0.00000072
+   Numero de instruções -> 265
+   Data da execução -> Fri Oct 21 16:17:43 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort_MEDEPA
+   Tamanho -> 10
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 0.00000062
+   Numero de instruções -> 265
+   Data da execução -> Fri Oct 21 16:17:43 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort
+   Tamanho -> 10
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 0.00000087
+   Numero de instruções -> 2785
+   Data da execução -> Fri Oct 21 16:18:42 2016
+---------------------------------------------------------------------------------------------------

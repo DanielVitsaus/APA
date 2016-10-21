@@ -33,3 +33,52 @@ Algoritmo -> RadixSort
    Numero de instruções -> 663
    Data da execução -> Fri Oct 21 07:46:38 2016
 ---------------------------------------------------------------------------------------------------
+Algoritmo -> InsertonSort
+   Tamanho -> 10
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 0.00000052
+   Numero de instruções -> 403
+   Data da execução -> Fri Oct 21 09:11:11 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> SelectionSort
+   Tamanho -> 10
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 0.00000064
+   Numero de instruções -> 0
+   Data da execução -> Fri Oct 21 09:11:36 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> BubbleSort
+   Tamanho -> 10
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 0.00000085
+   Numero de instruções -> 940
+   Data da execução -> Fri Oct 21 09:18:53 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort_MEDPE
+   Tamanho -> 10
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 0.00000120
+   Numero de instruções -> 209
+   Data da execução -> Fri Oct 21 16:17:27 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort_MEPEPC
+   Tamanho -> 10
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 0.00000060
+   Numero de instruções -> 245
+   Data da execução -> Fri Oct 21 16:17:43 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort_MEDEPA
+   Tamanho -> 10
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 0.00000063
+   Numero de instruções -> 245
+   Data da execução -> Fri Oct 21 16:17:43 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort
+   Tamanho -> 10
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 0.00000095
+   Numero de instruções -> 2785
+   Data da execução -> Fri Oct 21 16:17:43 2016
+---------------------------------------------------------------------------------------------------

@@ -1,0 +1,14 @@
+instancia_10_CR
+COM_REPETIÇÃO
+10
+
+7
+3
+10
+7
+8
+4
+6
+8
+9
+2

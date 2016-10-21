@@ -33,3 +33,52 @@ Algoritmo -> RadixSort
    Numero de instruções -> 13200558
    Data da execução -> Fri Oct 21 07:46:38 2016
 ---------------------------------------------------------------------------------------------------
+Algoritmo -> InsertonSort
+   Tamanho -> 100000
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 6.28000784
+   Numero de instruções -> 15049480375
+   Data da execução -> Fri Oct 21 09:11:30 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> SelectionSort
+   Tamanho -> 100000
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 9.39128304
+   Numero de instruções -> 0
+   Data da execução -> Fri Oct 21 09:11:55 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> BubbleSort
+   Tamanho -> 100000
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 40.79211807
+   Numero de instruções -> 79859441178
+   Data da execução -> Fri Oct 21 09:20:13 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort_MEDPE
+   Tamanho -> 100000
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 0.01545415
+   Numero de instruções -> 7516976
+   Data da execução -> Fri Oct 21 16:17:27 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort_MEPEPC
+   Tamanho -> 100000
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 0.01503050
+   Numero de instruções -> 7763658
+   Data da execução -> Fri Oct 21 16:17:43 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort_MEDEPA
+   Tamanho -> 100000
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 0.01483567
+   Numero de instruções -> 7763658
+   Data da execução -> Fri Oct 21 16:17:43 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort
+   Tamanho -> 100000
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 0.02268441
+   Numero de instruções -> 2785
+   Data da execução -> Fri Oct 21 16:17:43 2016
+---------------------------------------------------------------------------------------------------

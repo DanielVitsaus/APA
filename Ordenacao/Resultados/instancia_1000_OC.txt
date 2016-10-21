@@ -33,3 +33,52 @@ Algoritmo -> RadixSort
    Numero de instruções -> 93354
    Data da execução -> Fri Oct 21 07:46:38 2016
 ---------------------------------------------------------------------------------------------------
+Algoritmo -> InsertonSort
+   Tamanho -> 1000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.00000486
+   Numero de instruções -> 13003
+   Data da execução -> Fri Oct 21 09:11:23 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> SelectionSort
+   Tamanho -> 1000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.00105383
+   Numero de instruções -> 0
+   Data da execução -> Fri Oct 21 09:11:46 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> BubbleSort
+   Tamanho -> 1000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.00000224
+   Numero de instruções -> 5998
+   Data da execução -> Fri Oct 21 09:19:32 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort_MEDPE
+   Tamanho -> 1000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.00081504
+   Numero de instruções -> 262000
+   Data da execução -> Fri Oct 21 16:17:27 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort_MEPEPC
+   Tamanho -> 1000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.00003620
+   Numero de instruções -> 21784
+   Data da execução -> Fri Oct 21 16:17:43 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort_MEDEPA
+   Tamanho -> 1000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.00003581
+   Numero de instruções -> 21784
+   Data da execução -> Fri Oct 21 16:17:43 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort
+   Tamanho -> 1000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.00152881
+   Numero de instruções -> 2785
+   Data da execução -> Fri Oct 21 16:17:43 2016
+---------------------------------------------------------------------------------------------------
