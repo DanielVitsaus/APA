@@ -13,7 +13,7 @@ using namespace std;
 
 void SelectionSort::ordena(int * vet, int tam)
 {
-    register int instrucoes = 0;
+    register unsigned long long int instrucoes = 0;
 
     instrucoes += 1;
     this->imv = 0;

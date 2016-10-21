@@ -14,6 +14,7 @@ using namespace std;
 
 void QuickSort::ordena(int* vet, int tam, int versao){
 
+    //register unsigned long long int instrucoes = 0;
 
     switch(versao){
 

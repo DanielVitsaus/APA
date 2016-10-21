@@ -14,7 +14,7 @@ void BubbleSort::ordena(int * vet, int tam)
 {
     this->start_time = chrono::system_clock::now();
 
-    register int instrucoes = 0;
+    register unsigned long long int instrucoes = 0;
 
     do{
         instrucoes += 1;

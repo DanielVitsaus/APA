@@ -13,7 +13,7 @@ using namespace std;
 //void Ordenacao::ordena(int * vet, int tam){}
 
 
-int Ordenacao::getNumInstrucao()
+unsigned long long int Ordenacao::getNumInstrucao()
 {
     return this->numInstrucao;
 }

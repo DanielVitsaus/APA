@@ -16,7 +16,7 @@ using namespace std;
 void MergeSort::ordena(int* vet, int tam, int versao){
 
     int* temp;
-    register int instrucoes = 0;
+    register unsigned long long int instrucoes = 0;
 
     switch(versao){
 
@@ -60,7 +60,7 @@ void MergeSort::ordena(int* vet, int tam, int versao){
 }
 
 
-void MergeSort::mergeSimple(int* vet, int tam, int* tem, register int &instrucoes){
+void MergeSort::mergeSimple(int* vet, int tam, int* tem, register unsigned long long int &instrucoes){
 
     instrucoes += 4;
     int middle = 0, i = 0, j = 0, k = 0;
@@ -134,7 +134,7 @@ void MergeSort::mergeSimple(int* vet, int tam, int* tem, register int &instrucoe
 }
 
 
-void MergeSort::mergeSortSimples(int* vet, int tam, int* tem, register int &instrucoes){
+void MergeSort::mergeSortSimples(int* vet, int tam, int* tem, register unsigned long long int &instrucoes){
 
     int middle;
     instrucoes += 1;

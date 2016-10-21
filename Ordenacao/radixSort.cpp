@@ -15,7 +15,7 @@ using namespace std;
 void RadixSort::ordena(int * vet, int tam)
 {
     this->start_time = chrono::system_clock::now();
-    register int instrucoes = 0;
+    register unsigned long long int instrucoes = 0;
 
     instrucoes += 4;
     this->exp = 1;

@@ -14,7 +14,7 @@ void InsertonSort::ordena(int * vet, int tam)
 {
     this->start_time = chrono::system_clock::now();
 
-    register int instrucoes = 0;
+    register unsigned long long int instrucoes = 0;
 
     instrucoes += 1;
     int j = 0;
@@ -36,6 +36,7 @@ void InsertonSort::ordena(int * vet, int tam)
     }
 
     this->numInstrucao = instrucoes;
+    instrucoes = 0;
     this->end_time = chrono::system_clock::now();
 
 }

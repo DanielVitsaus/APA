@@ -4,8 +4,10 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include <string>
+#include <string.h>
 #include <cstdlib>
+
+#include "Ordenacao.h"
 
 using namespace std;
 
@@ -23,12 +25,10 @@ class LeituraGravacao
         char* getTipoInstacia(){ return tipoInstacia; };
         char* getNomeInstacia(){ return nomeInstacia; };
         int getTamanhaoArquivo(){ return tamanhoArquivo; };
-        int* lerArquivo(char *ar);
-        vector<char*> listaArquivos();
-        void grava(int* vet, int tam);
-        //void gravaArquivoResultado(char* nomArquivo, string reslutado);
-        //void gravaArquivo(Grafo *g, char* nomArquivo,int nVertice, int nAresta, float grauMedio);
-
+        int* lerArquivo(string ar);
+        vector<string> listaArquivos();
+        void gravaVetor(int* vet, int tam, string nome);
+        void gravaInfo(Ordenacao* algoritmo);
 };
 
 

@@ -21,11 +21,11 @@ class Ordenacao
         chrono::time_point<chrono::system_clock> end_time;
         time_t end_timeF;
         int idAlgoritmo;
-        int numInstrucao;
+        long long int numInstrucao;
         int tamanhoInstancia;
-        char* nomeInstancia;
+        string nomeInstancia;
         char* tipoInstancia;
-        char* nomeAlgoritmo;
+        string nomeAlgoritmo;
 
     public:
         //void ordena(int * vet, int tam);
@@ -34,16 +34,16 @@ class Ordenacao
         chrono::time_point<chrono::system_clock> getEndTime();
         time_t getDate();
         int getIDAlgoritmo(){ return idAlgoritmo; };
-        int getNumInstrucao();
+        unsigned long long int getNumInstrucao();
         float getRunTime();
-        void setNomeInstancia(char* nome){ nomeInstancia = nome; };
+        void setNomeInstancia(string nome){ nomeInstancia = nome; };
         void setTipoInstancia(char* tipo){ tipoInstancia = tipo; };
-        void setNomeAlgoritmo(char* nome){ nomeAlgoritmo = nome; };
+        void setNomeAlgoritmo(string nome){ nomeAlgoritmo = nome; };
         void setTamanhoInstancia(int tam){ tamanhoInstancia = tam; };
         int getTamanhoInstancia() { return tamanhoInstancia; };
-        char* getNomeInstancia(){ return nomeInstancia; };
+        string getNomeInstancia(){ return nomeInstancia; };
         char* getTipoInstancia(){ return tipoInstancia; };
-        char* getNomeAlgoritmo(){ return nomeAlgoritmo; };
+        string getNomeAlgoritmo(){ return nomeAlgoritmo; };
 
 };
 

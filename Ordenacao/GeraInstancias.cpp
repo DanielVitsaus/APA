@@ -42,7 +42,7 @@ void GeraInstancias::ordenCrescente(int tam){
 
     this->arquivoGravacao.open(diretorio, ios::out);
 
-    this->arquivoGravacao << "intancia_"+Result+"_OC" << endl;
+    this->arquivoGravacao << "instancia_"+Result+"_OC" << endl;
     this->arquivoGravacao << "ORDENAÇÃO_CRESCENTE" << endl;
     this->arquivoGravacao << tam;
     this->arquivoGravacao << endl;
@@ -73,7 +73,7 @@ void GeraInstancias::ordenDecrecente(int tam){
 
     this->arquivoGravacao.open(diretorio, ios::out);
 
-    this->arquivoGravacao << "intancia_"+Result+"_OD" << endl;
+    this->arquivoGravacao << "instancia_"+Result+"_OD" << endl;
     this->arquivoGravacao << "ORDENAÇÃO_DECRESCENTE" << endl;
     this->arquivoGravacao << tam;
     this->arquivoGravacao << endl;
@@ -114,7 +114,7 @@ void GeraInstancias::comRepeticao(int tam){
 
     this->arquivoGravacao.open(diretorio, ios::out);
 
-    this->arquivoGravacao << "intancia_"+Result+"_CR" << endl;
+    this->arquivoGravacao << "instancia_"+Result+"_CR" << endl;
     this->arquivoGravacao << "COM_REPETIÇÃO" << endl;
     this->arquivoGravacao << tam;
     this->arquivoGravacao << endl;
@@ -156,7 +156,7 @@ void GeraInstancias::semRepeticao(int tam){
 
     this->arquivoGravacao.open(diretorio, ios::out);
 
-    this->arquivoGravacao << "intancia_"+Result+"_SC" << endl;
+    this->arquivoGravacao << "instancia_"+Result+"_SC" << endl;
     this->arquivoGravacao << "SEM_REPETIÇÃO" << endl;
     this->arquivoGravacao << tam;
     this->arquivoGravacao << endl;

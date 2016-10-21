@@ -14,7 +14,7 @@ void HeapSort::ordena(int * vet, int tam)
 {
     this->start_time = chrono::system_clock::now();
 
-    register int instrucoes = 0;
+    register unsigned long long int instrucoes = 0;
 
     instrucoes += 5;
     this->i = tam/2; this->temp = 0;
