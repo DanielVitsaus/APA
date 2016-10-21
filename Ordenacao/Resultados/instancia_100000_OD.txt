@@ -1,0 +1,35 @@
+Algoritmo -> CountingSort
+   Tamanho -> 100000
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 0.00200961
+   Numero de instruções -> 3000017
+   Data da execução -> Fri Oct 21 07:27:00 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> HeapSort
+   Tamanho -> 100000
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 0.01883664
+   Numero de instruções -> 27081724
+   Data da execução -> Fri Oct 21 07:29:27 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> MergeSort_MA
+   Tamanho -> 100000
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 0.01991994
+   Numero de instruções -> 24612678
+   Data da execução -> Fri Oct 21 07:38:56 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> MergeSort_PR
+   Tamanho -> 100000
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 0.02050707
+   Numero de instruções -> 24712680
+   Data da execução -> Fri Oct 21 07:42:57 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> RadixSort
+   Tamanho -> 100000
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 0.01249856
+   Numero de instruções -> 13200531
+   Data da execução -> Fri Oct 21 07:46:45 2016
+---------------------------------------------------------------------------------------------------

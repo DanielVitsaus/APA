@@ -101,7 +101,7 @@ int* LeituraGravacao::lerArquivo(string ar)
         i++;
     }
     this->arquivoLeitura.close();
-    cout << "\nO arquivo foi " << ar << " lido com sucesso!\n" << endl;
+    cout << "O arquivo foi " << ar << " lido com sucesso!" << endl;
     return this->vetor;
 }
 

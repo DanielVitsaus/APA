@@ -61,6 +61,7 @@ int main()
         legrava->gravaInfo(ordenacao);
         cout << "Arquivo gerado! \n" << endl;
     }
+
     free(bubbleSort);
 
     cout << "\n************ Utilizando o algoritmo CountingSort! ************\n" << endl;
@@ -163,7 +164,7 @@ int main()
     }
     free(mergeSort);
 
-    /*
+/*
     cout << "\n************ Utilizando o algoritmo QuickSort! ************\n" << endl;
     for (int i = 0; i < (int)arquivos.size(); i++){
 
@@ -183,7 +184,7 @@ int main()
         cout << "Arquivo gerado! \n" << endl;
     }
     free(quick);
-    */
+*/
 
     cout << "\n************ Utilizando o algoritmo RadixSort! ************\n" << endl;
     for (int i = 0; i < (int)arquivos.size(); i++){
