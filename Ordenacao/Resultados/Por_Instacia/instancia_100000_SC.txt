@@ -1,0 +1,84 @@
+Algoritmo -> CountingSort
+   Tamanho -> 100000
+   Tipo -> SEM_REPETIÇÃO
+   Tempo de execução -> 0.00344546
+   Numero de instruções -> 3000017
+   Data da execução -> Sat Oct 22 09:00:36 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> HeapSort
+   Tamanho -> 100000
+   Tipo -> SEM_REPETIÇÃO
+   Tempo de execução -> 0.02440632
+   Numero de instruções -> 28227315
+   Data da execução -> Sat Oct 22 09:00:36 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> MergeSort_MA
+   Tamanho -> 100000
+   Tipo -> SEM_REPETIÇÃO
+   Tempo de execução -> 0.02856253
+   Numero de instruções -> 28709418
+   Data da execução -> Sat Oct 22 09:00:36 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> MergeSort_PR
+   Tamanho -> 100000
+   Tipo -> SEM_REPETIÇÃO
+   Tempo de execução -> 0.02872527
+   Numero de instruções -> 28809420
+   Data da execução -> Sat Oct 22 09:00:37 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort
+   Tamanho -> 100000
+   Tipo -> SEM_REPETIÇÃO
+   Tempo de execução -> 0.02061362
+   Numero de instruções -> 17259992
+   Data da execução -> Sat Oct 22 09:00:51 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort_MEDPE
+   Tamanho -> 100000
+   Tipo -> SEM_REPETIÇÃO
+   Tempo de execução -> 0.01404124
+   Numero de instruções -> 7467894
+   Data da execução -> Sat Oct 22 09:01:39 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort_MEPEPC
+   Tamanho -> 100000
+   Tipo -> SEM_REPETIÇÃO
+   Tempo de execução -> 0.01407634
+   Numero de instruções -> 7736738
+   Data da execução -> Sat Oct 22 09:01:49 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort_MEDEPA
+   Tamanho -> 100000
+   Tipo -> SEM_REPETIÇÃO
+   Tempo de execução -> 0.01546591
+   Numero de instruções -> 6467590
+   Data da execução -> Sat Oct 22 09:01:49 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> RadixSort
+   Tamanho -> 100000
+   Tipo -> SEM_REPETIÇÃO
+   Tempo de execução -> 0.01263779
+   Numero de instruções -> 13200567
+   Data da execução -> Sat Oct 22 09:01:49 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> SelectionSort
+   Tamanho -> 100000
+   Tipo -> SEM_REPETIÇÃO
+   Tempo de execução -> 13.39015198
+   Numero de instruções -> 15002147792
+   Data da execução -> Sat Oct 22 09:02:16 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> BubbleSort
+   Tamanho -> 100000
+   Tipo -> SEM_REPETIÇÃO
+   Tempo de execução -> 70.45547485
+   Numero de instruções -> 79218335566
+   Data da execução -> Sat Oct 22 09:03:54 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> InsertonSort
+   Tamanho -> 100000
+   Tipo -> SEM_REPETIÇÃO
+   Tempo de execução -> 11.16133022
+   Numero de instruções -> 14470551493
+   Data da execução -> Sat Oct 22 09:06:43 2016
+---------------------------------------------------------------------------------------------------

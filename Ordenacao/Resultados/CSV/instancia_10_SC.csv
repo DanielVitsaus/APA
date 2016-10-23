@@ -1,0 +1,24 @@
+CountingSort;10;SEM_REPETIÇÃO;T_em_s -> 0.00000094;N_I -> 317;Sat Oct 22 09:00:36 2016
+
+HeapSort;10;SEM_REPETIÇÃO;T_em_s -> 0.00000061;N_I -> 551;Sat Oct 22 09:00:36 2016
+
+MergeSort_MA;10;SEM_REPETIÇÃO;T_em_s -> 0.00000175;N_I -> 738;Sat Oct 22 09:00:36 2016
+
+MergeSort_PR;10;SEM_REPETIÇÃO;T_em_s -> 0.00000206;N_I -> 750;Sat Oct 22 09:00:37 2016
+
+QuickSort;10;SEM_REPETIÇÃO;T_em_s -> 0.00000057;N_I -> 256;Sat Oct 22 09:01:33 2016
+
+QuickSort_MEDPE;10;SEM_REPETIÇÃO;T_em_s -> 0.00000075;N_I -> 259;Sat Oct 22 09:01:48 2016
+
+QuickSort_MEPEPC;10;SEM_REPETIÇÃO;T_em_s -> 0.00000063;N_I -> 289;Sat Oct 22 09:01:49 2016
+
+QuickSort_MEDEPA;10;SEM_REPETIÇÃO;T_em_s -> 0.00000070;N_I -> 142;Sat Oct 22 09:01:49 2016
+
+RadixSort;10;SEM_REPETIÇÃO;T_em_s -> 0.00000122;N_I -> 669;Sat Oct 22 09:01:49 2016
+
+SelectionSort;10;SEM_REPETIÇÃO;T_em_s -> 0.00000065;N_I -> 254;Sat Oct 22 09:02:30 2016
+
+BubbleSort;10;SEM_REPETIÇÃO;T_em_s -> 0.00000093;N_I -> 730;Sat Oct 22 09:05:21 2016
+
+InsertonSort;10;SEM_REPETIÇÃO;T_em_s -> 0.00000035;N_I -> 289;Sat Oct 22 09:07:04 2016
+

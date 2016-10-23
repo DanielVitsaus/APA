@@ -1,0 +1,168 @@
+Nome da instancia -> instancia_100_OD
+   Tamanho -> 100
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 0.00001418
+   Numero de instruções -> 11732
+   Data da execução -> Sat Oct 22 09:00:36 2016
+---------------------------------------------------------------------------------------------------
+Nome da instancia -> instancia_1000_CR
+   Tamanho -> 1000
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 0.00024433
+   Numero de instruções -> 180996
+   Data da execução -> Sat Oct 22 09:00:36 2016
+---------------------------------------------------------------------------------------------------
+Nome da instancia -> instancia_10_OC
+   Tamanho -> 10
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.00000183
+   Numero de instruções -> 696
+   Data da execução -> Sat Oct 22 09:00:36 2016
+---------------------------------------------------------------------------------------------------
+Nome da instancia -> instancia_100_CR
+   Tamanho -> 100
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 0.00002079
+   Numero de instruções -> 12896
+   Data da execução -> Sat Oct 22 09:00:36 2016
+---------------------------------------------------------------------------------------------------
+Nome da instancia -> instancia_100_SC
+   Tamanho -> 100
+   Tipo -> SEM_REPETIÇÃO
+   Tempo de execução -> 0.00001943
+   Numero de instruções -> 12842
+   Data da execução -> Sat Oct 22 09:00:36 2016
+---------------------------------------------------------------------------------------------------
+Nome da instancia -> instancia_10_CR
+   Tamanho -> 10
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 0.00000241
+   Numero de instruções -> 744
+   Data da execução -> Sat Oct 22 09:00:36 2016
+---------------------------------------------------------------------------------------------------
+Nome da instancia -> instancia_100000_OC
+   Tamanho -> 100000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.02109936
+   Numero de instruções -> 24479400
+   Data da execução -> Sat Oct 22 09:00:36 2016
+---------------------------------------------------------------------------------------------------
+Nome da instancia -> instancia_100_OC
+   Tamanho -> 100
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.00001680
+   Numero de instruções -> 11492
+   Data da execução -> Sat Oct 22 09:00:36 2016
+---------------------------------------------------------------------------------------------------
+Nome da instancia -> instancia_100000_SC
+   Tamanho -> 100000
+   Tipo -> SEM_REPETIÇÃO
+   Tempo de execução -> 0.02872527
+   Numero de instruções -> 28809420
+   Data da execução -> Sat Oct 22 09:00:37 2016
+---------------------------------------------------------------------------------------------------
+Nome da instancia -> instancia_100000_OD
+   Tamanho -> 100000
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 0.02125984
+   Numero de instruções -> 24712680
+   Data da execução -> Sat Oct 22 09:00:37 2016
+---------------------------------------------------------------------------------------------------
+Nome da instancia -> instancia_1000_OD
+   Tamanho -> 1000
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 0.00017191
+   Numero de instruções -> 159000
+   Data da execução -> Sat Oct 22 09:00:37 2016
+---------------------------------------------------------------------------------------------------
+Nome da instancia -> instancia_1000_OC
+   Tamanho -> 1000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.00015845
+   Numero de instruções -> 158328
+   Data da execução -> Sat Oct 22 09:00:37 2016
+---------------------------------------------------------------------------------------------------
+Nome da instancia -> instancia_10_SC
+   Tamanho -> 10
+   Tipo -> SEM_REPETIÇÃO
+   Tempo de execução -> 0.00000206
+   Numero de instruções -> 750
+   Data da execução -> Sat Oct 22 09:00:37 2016
+---------------------------------------------------------------------------------------------------
+Nome da instancia -> instancia_10_OD
+   Tamanho -> 10
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 0.00000192
+   Numero de instruções -> 720
+   Data da execução -> Sat Oct 22 09:00:37 2016
+---------------------------------------------------------------------------------------------------
+Nome da instancia -> instancia_100000_CR
+   Tamanho -> 100000
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 0.02793666
+   Numero de instruções -> 28806120
+   Data da execução -> Sat Oct 22 09:00:37 2016
+---------------------------------------------------------------------------------------------------
+Nome da instancia -> instancia_1000_SC
+   Tamanho -> 1000
+   Tipo -> SEM_REPETIÇÃO
+   Tempo de execução -> 0.00023090
+   Numero de instruções -> 180870
+   Data da execução -> Sat Oct 22 09:00:37 2016
+---------------------------------------------------------------------------------------------------
+Nome da instancia -> instancia_10000000_CR
+   Tamanho -> 10000000
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 3.58279991
+   Numero de instruções -> 3942835586
+   Data da execução -> Sat Oct 22 09:24:03 2016
+---------------------------------------------------------------------------------------------------
+Nome da instancia -> instancia_10000000_SC
+   Tamanho -> 10000000
+   Tipo -> SEM_REPETIÇÃO
+   Tempo de execução -> 3.58778596
+   Numero de instruções -> 3942828080
+   Data da execução -> Sat Oct 22 09:24:09 2016
+---------------------------------------------------------------------------------------------------
+Nome da instancia -> instancia_100000000_OC
+   Tamanho -> 100000000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 29.76627159
+   Numero de instruções -> 37444505320
+   Data da execução -> Sat Oct 22 09:25:00 2016
+---------------------------------------------------------------------------------------------------
+Nome da instancia -> instancia_100000000_CR
+   Tamanho -> 100000000
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 40.63443375
+   Numero de instruções -> 44755364986
+   Data da execução -> Sat Oct 22 09:26:04 2016
+---------------------------------------------------------------------------------------------------
+Nome da instancia -> instancia_100000000_SC
+   Tamanho -> 100000000
+   Tipo -> SEM_REPETIÇÃO
+   Tempo de execução -> 40.45625305
+   Numero de instruções -> 44755286128
+   Data da execução -> Sat Oct 22 09:27:07 2016
+---------------------------------------------------------------------------------------------------
+Nome da instancia -> instancia_10000000_OC
+   Tamanho -> 10000000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 2.67284679
+   Numero de instruções -> 3308835560
+   Data da execução -> Sat Oct 22 09:27:14 2016
+---------------------------------------------------------------------------------------------------
+Nome da instancia -> instancia_10000000_OD
+   Tamanho -> 10000000
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 2.78347945
+   Numero de instruções -> 3334956776
+   Data da execução -> Sat Oct 22 09:27:19 2016
+---------------------------------------------------------------------------------------------------
+Nome da instancia -> instancia_100000000_OD
+   Tamanho -> 100000000
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 30.91167831
+   Numero de instruções -> 37665833704
+   Data da execução -> Sat Oct 22 09:28:11 2016
+---------------------------------------------------------------------------------------------------

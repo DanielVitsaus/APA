@@ -90,8 +90,8 @@ int* LeituraGravacao::lerArquivo(string ar)
     this->arquivoLeitura.getline(buff,20);
 
     // aloca memoria pra o vetor
-    this->vetor = new int[this->getTamanhaoArquivo()];
-    memset( this->vetor, 0, sizeof(int) * this->getTamanhaoArquivo() );
+    this->vetor = new int[this->getTamanhaoArquivo() + 10];
+    memset( this->vetor, 0, sizeof(int) * (this->getTamanhaoArquivo() + 10) );
 
     while( (!this->arquivoLeitura.eof()) && (i < this->getTamanhaoArquivo()) )
     {
@@ -121,8 +121,9 @@ void LeituraGravacao::gravaVetor(int* vet, int tam, string nome){
 
 void LeituraGravacao::gravaInfo(Ordenacao* algoritmo){
 
-    char diretorio[100] = "Resultados//";
-    char diretorio2[100] = "Resultados//";
+    char diretorio[200] = "Resultados//Por_Algoritmo//";
+    char diretorio2[200] = "Resultados//Por_Instacia//";
+    char diretorio3[200] = "Resultados//CSV//";
     string nome;
     time_t date;
 
@@ -153,7 +154,7 @@ void LeituraGravacao::gravaInfo(Ordenacao* algoritmo){
 
     this->arquivoGravacao.open(diretorio2, ios::app);
 
-    this->arquivoGravacao  << "Algoritmo -> " << algoritmo->getNomeAlgoritmo() << "\n   "
+    this->arquivoGravacao << "Algoritmo -> " << algoritmo->getNomeAlgoritmo() << "\n   "
                           << "Tamanho -> " << algoritmo->getTamanhoInstancia() << "\n   "
                           << "Tipo -> " << algoritmo->getTipoInstancia() << "\n   "
                           << "Tempo de execução -> "<< fixed << setprecision(8) << algoritmo->getRunTime() << "\n   "
@@ -163,4 +164,23 @@ void LeituraGravacao::gravaInfo(Ordenacao* algoritmo){
 
     this->arquivoGravacao.close();
 //-------------------------------------------------------------------------------------------------------------------------------------------
+
+//---------- Grava um arquivo .csv --------------------------------------------------------------------------------------
+    nome = algoritmo->getNomeInstancia();
+    date = algoritmo->getDate();
+    nome += ".csv";
+    strcat(diretorio3,nome.c_str());
+
+    this->arquivoGravacao.open(diretorio3, ios::app);
+
+    this->arquivoGravacao << algoritmo->getNomeAlgoritmo() << ";"
+                          << algoritmo->getTamanhoInstancia() << ";"
+                          << algoritmo->getTipoInstancia() << ";"
+                          << "T_em_s -> "<< fixed << setprecision(8) << algoritmo->getRunTime() << ";"
+                          << "N_I -> " << algoritmo->getNumInstrucao() << ";"
+                          <<  ctime(&date) <<endl;
+
+    this->arquivoGravacao.close();
+//-------------------------------------------------------------------------------------------------------------------------------------------
+
 }

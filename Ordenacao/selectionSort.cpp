@@ -36,7 +36,7 @@ void SelectionSort::ordena(int * vet, int tam)
         }
         instrucoes += 8;
     }
-
+    this->numInstrucao = instrucoes;
     this->end_time = chrono::system_clock::now();
 
 }

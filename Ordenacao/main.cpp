@@ -31,7 +31,7 @@ int main()
     LeituraGravacao* legrava = new LeituraGravacao();
     arquivos = legrava->listaArquivos();
 
-    Ordenacao* ordenacao = new Ordenacao();
+    Ordenacao* ordenacao ;
 
     BubbleSort* bubbleSort = new BubbleSort();
     CountingSort* counting = new CountingSort();
@@ -43,8 +43,215 @@ int main()
     SelectionSort* selection = new SelectionSort();
 
 
+    cout << "\n************ Utilizando o algoritmo CountingSort! ************\n" << endl;
+    for (int i = (int)arquivos.size() -1 ; i >= 0; i--){
+
+        v = legrava->lerArquivo(arquivos[i]);
+
+        counting->setNomeAlgoritmo("CountingSort");
+        counting->setNomeInstancia(legrava->getNomeInstacia());
+        counting->setTamanhoInstancia(legrava->getTamanhaoArquivo());
+        counting->setTipoInstancia(legrava->getTipoInstacia());
+        ordenacao = counting;
+        cout << "Ordenado..." << endl;
+        ((CountingSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo());
+        cout << "Oerdenação concluida! \n\n "  << endl;
+
+        cout << "Gerando arquivo..." << endl;
+        legrava->gravaInfo(ordenacao);
+        cout << "Arquivo gerado! \n" << endl;
+    }
+    free(counting);
+
+
+    cout << "\n************ Utilizando o algoritmo RadixSort! ************\n" << endl;
+    for (int i = (int)arquivos.size() -1 ; i >= 0; i--){
+
+        v = legrava->lerArquivo(arquivos[i]);
+
+        radix->setNomeAlgoritmo("RadixSort");
+        radix->setNomeInstancia(legrava->getNomeInstacia());
+        radix->setTamanhoInstancia(legrava->getTamanhaoArquivo());
+        radix->setTipoInstancia(legrava->getTipoInstacia());
+        ordenacao = radix;
+        cout << "Ordenado..." << endl;
+        ((RadixSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo());
+        cout << "Oerdenação concluida! \n\n "  << endl;
+
+        cout << "Gerando arquivo..." << endl;
+        legrava->gravaInfo(ordenacao);
+        cout << "Arquivo gerado! \n" << endl;
+    }
+    free(radix);
+
+    cout << "\n************ Utilizando o algoritmo HeapSort! ************\n" << endl;
+    for (int i = (int)arquivos.size() -1 ; i >= 0; i--){
+
+        v = legrava->lerArquivo(arquivos[i]);
+
+        heap->setNomeAlgoritmo("HeapSort");
+        heap->setNomeInstancia(legrava->getNomeInstacia());
+        heap->setTamanhoInstancia(legrava->getTamanhaoArquivo());
+        heap->setTipoInstancia(legrava->getTipoInstacia());
+        ordenacao = heap;
+        cout << "Ordenado..." << endl;
+        ((HeapSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo());
+        cout << "Oerdenação concluida! \n\n "  << endl;
+
+        cout << "Gerando arquivo..." << endl;
+        legrava->gravaInfo(ordenacao);
+        cout << "Arquivo gerado! \n" << endl;
+    }
+    free(heap);
+
+
+
+    cout << "\n************ Utilizando o algoritmo MergeSort com alocação de memoria! ************\n" << endl;
+    for (int i = (int)arquivos.size() -1 ; i >= 0; i--){
+
+        v = legrava->lerArquivo(arquivos[i]);
+
+        mergeSort->setNomeAlgoritmo("MergeSort_MA");
+        mergeSort->setNomeInstancia(legrava->getNomeInstacia());
+        mergeSort->setTamanhoInstancia(legrava->getTamanhaoArquivo());
+        mergeSort->setTipoInstancia(legrava->getTipoInstacia());
+        ordenacao = mergeSort;
+        cout << "Ordenado..." << endl;
+        ((MergeSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo(), 1);
+        cout << "Oerdenação concluida! \n\n "  << endl;
+
+        cout << "Gerando arquivo..." << endl;
+        legrava->gravaInfo(ordenacao);
+        cout << "Arquivo gerado! \n" << endl;
+    }
+
+
+    cout << "\n************ Utilizando o algoritmo MergeSort com parametro add na recursao! ************\n" << endl;
+    for (int i = (int)arquivos.size() -1 ; i >= 0; i--){
+
+        v = legrava->lerArquivo(arquivos[i]);
+
+        mergeSort->setNomeAlgoritmo("MergeSort_PR");
+        mergeSort->setNomeInstancia(legrava->getNomeInstacia());
+        mergeSort->setTamanhoInstancia(legrava->getTamanhaoArquivo());
+        mergeSort->setTipoInstancia(legrava->getTipoInstacia());
+        ordenacao = mergeSort;
+        cout << "Ordenado..." << endl;
+        ((MergeSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo(), 2);
+        cout << "Oerdenação concluida! \n\n "  << endl;
+
+        cout << "Gerando arquivo..." << endl;
+        legrava->gravaInfo(ordenacao);
+        cout << "Arquivo gerado! \n" << endl;
+    }
+    free(mergeSort);
+
+
+    cout << "\n************ Utilizando o algoritmo QuickSort ! ************\n" << endl;
+    for (int i = (int)arquivos.size() -1 ; i >= 0; i--){
+
+        v = legrava->lerArquivo(arquivos[i]);
+
+        quick->setNomeAlgoritmo("QuickSort"); // o maior entre dois elementos de posições aleatórias
+        quick->setNomeInstancia(legrava->getNomeInstacia());
+        quick->setTamanhoInstancia(legrava->getTamanhaoArquivo());
+        quick->setTipoInstancia(legrava->getTipoInstacia());
+        ordenacao = quick;
+        cout << "Ordenado..." << endl;
+        ((QuickSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo(), 4);
+        cout << "Oerdenação concluida! \n\n "  << endl;
+
+        cout << "Gerando arquivo..." << endl;
+        legrava->gravaInfo(ordenacao);
+        cout << "Arquivo gerado! \n" << endl;
+
+
+    }
+
+
+    cout << "\n************ Utilizando o algoritmo QuickSort MEDPE ! ************\n" << endl;
+    for (int i = (int)arquivos.size() -1 ; i >= 0; i--){
+
+        v = legrava->lerArquivo(arquivos[i]);
+
+        quick->setNomeAlgoritmo("QuickSort_MEDPE"); // maior entre os dois primeiros elementos
+        quick->setNomeInstancia(legrava->getNomeInstacia());
+        quick->setTamanhoInstancia(legrava->getTamanhaoArquivo());
+        quick->setTipoInstancia(legrava->getTipoInstacia());
+        ordenacao = quick;
+        cout << "Ordenado..." << endl;
+        ((QuickSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo(), 1);
+        cout << "Oerdenação concluida! \n\n "  << endl;
+
+        cout << "Gerando arquivo..." << endl;
+        legrava->gravaInfo(ordenacao);
+        cout << "Arquivo gerado! \n" << endl;
+    }
+
+    cout << "\n************ Utilizando o algoritmo QuickSort MEPEPC ! ************\n" << endl;
+    for (int i = (int)arquivos.size() -1 ; i >= 0; i--){
+
+        v = legrava->lerArquivo(arquivos[i]);
+
+        quick->setNomeAlgoritmo("QuickSort_MEPEPC"); // maior entre o primeiro elemento e o elemento da posição central do vetor
+        quick->setNomeInstancia(legrava->getNomeInstacia());
+        quick->setTamanhoInstancia(legrava->getTamanhaoArquivo());
+        quick->setTipoInstancia(legrava->getTipoInstacia());
+        ordenacao = quick;
+        cout << "Ordenado..." << endl;
+        ((QuickSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo(), 2);
+        cout << "Oerdenação concluida! \n\n "  << endl;
+
+        cout << "Gerando arquivo..." << endl;
+        legrava->gravaInfo(ordenacao);
+        cout << "Arquivo gerado! \n" << endl;
+
+    }
+
+    cout << "\n************ Utilizando o algoritmo QuickSort MEDEPA ! ************\n" << endl;
+    for (int i = (int)arquivos.size() -1 ; i >= 0; i--){
+
+        v = legrava->lerArquivo(arquivos[i]);
+
+        quick->setNomeAlgoritmo("QuickSort_MEDEPA"); // o maior entre dois elementos de posições aleatórias
+        quick->setNomeInstancia(legrava->getNomeInstacia());
+        quick->setTamanhoInstancia(legrava->getTamanhaoArquivo());
+        quick->setTipoInstancia(legrava->getTipoInstacia());
+        ordenacao = quick;
+        cout << "Ordenado..." << endl;
+        ((QuickSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo(), 3);
+        cout << "Oerdenação concluida! \n\n "  << endl;
+
+        cout << "Gerando arquivo..." << endl;
+        legrava->gravaInfo(ordenacao);
+        cout << "Arquivo gerado! \n" << endl;
+    }
+
+    free(quick);
+
+    cout << "\n************ Utilizando o algoritmo SelectionSort! ************\n" << endl;
+    for (int i = (int)arquivos.size() -1 ; i >= 0; i--){
+
+        v = legrava->lerArquivo(arquivos[i]);
+
+        selection->setNomeAlgoritmo("SelectionSort");
+        selection->setNomeInstancia(legrava->getNomeInstacia());
+        selection->setTamanhoInstancia(legrava->getTamanhaoArquivo());
+        selection->setTipoInstancia(legrava->getTipoInstacia());
+        ordenacao = selection;
+        cout << "Ordenado..." << endl;
+        ((SelectionSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo());
+        cout << "Oerdenação concluida! \n\n "  << endl;
+
+        cout << "Gerando arquivo..." << endl;
+        legrava->gravaInfo(ordenacao);
+        cout << "Arquivo gerado! \n" << endl;
+    }
+    free(selection);
+
+
     cout << "\n************ Utilizando o algoritmo BubbleSort! ************\n" << endl;
-    for (int i = 0; i < (int)arquivos.size(); i++){
+    for (int i = (int)arquivos.size() -1 ; i >= 0; i--){
 
         v = legrava->lerArquivo(arquivos[i]);
 
@@ -65,48 +272,8 @@ int main()
     free(bubbleSort);
 
 
-    cout << "\n************ Utilizando o algoritmo CountingSort! ************\n" << endl;
-    for (int i = 0; i < (int)arquivos.size(); i++){
-
-        v = legrava->lerArquivo(arquivos[i]);
-
-        counting->setNomeAlgoritmo("CountingSort");
-        counting->setNomeInstancia(legrava->getNomeInstacia());
-        counting->setTamanhoInstancia(legrava->getTamanhaoArquivo());
-        counting->setTipoInstancia(legrava->getTipoInstacia());
-        ordenacao = counting;
-        cout << "Ordenado..." << endl;
-        ((CountingSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo());
-        cout << "Oerdenação concluida! \n\n "  << endl;
-
-        cout << "Gerando arquivo..." << endl;
-        legrava->gravaInfo(ordenacao);
-        cout << "Arquivo gerado! \n" << endl;
-    }
-    free(counting);
-
-    cout << "\n************ Utilizando o algoritmo HeapSort! ************\n" << endl;
-    for (int i = 0; i < (int)arquivos.size(); i++){
-
-        v = legrava->lerArquivo(arquivos[i]);
-
-        heap->setNomeAlgoritmo("HeapSort");
-        heap->setNomeInstancia(legrava->getNomeInstacia());
-        heap->setTamanhoInstancia(legrava->getTamanhaoArquivo());
-        heap->setTipoInstancia(legrava->getTipoInstacia());
-        ordenacao = heap;
-        cout << "Ordenado..." << endl;
-        ((HeapSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo());
-        cout << "Oerdenação concluida! \n\n "  << endl;
-
-        cout << "Gerando arquivo..." << endl;
-        legrava->gravaInfo(ordenacao);
-        cout << "Arquivo gerado! \n" << endl;
-    }
-    free(heap);
-
     cout << "\n************ Utilizando o algoritmo InsertonSort! ************\n" << endl;
-    for (int i = 0; i < (int)arquivos.size(); i++){
+    for (int i = (int)arquivos.size() -1 ; i >= 0; i--){
 
         v = legrava->lerArquivo(arquivos[i]);
 
@@ -124,166 +291,6 @@ int main()
         cout << "Arquivo gerado! \n" << endl;
     }
     free(insertSort);
-
-    cout << "\n************ Utilizando o algoritmo MergeSort com alocação de memoria! ************\n" << endl;
-    for (int i = 0; i < (int)arquivos.size(); i++){
-
-        v = legrava->lerArquivo(arquivos[i]);
-
-        mergeSort->setNomeAlgoritmo("MergeSort_MA");
-        mergeSort->setNomeInstancia(legrava->getNomeInstacia());
-        mergeSort->setTamanhoInstancia(legrava->getTamanhaoArquivo());
-        mergeSort->setTipoInstancia(legrava->getTipoInstacia());
-        ordenacao = mergeSort;
-        cout << "Ordenado..." << endl;
-        ((MergeSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo(), 1);
-        cout << "Oerdenação concluida! \n\n "  << endl;
-
-        cout << "Gerando arquivo..." << endl;
-        legrava->gravaInfo(ordenacao);
-        cout << "Arquivo gerado! \n" << endl;
-    }
-
-
-    cout << "\n************ Utilizando o algoritmo MergeSort com parametro add na recursao! ************\n" << endl;
-    for (int i = 0; i < (int)arquivos.size(); i++){
-
-        v = legrava->lerArquivo(arquivos[i]);
-
-        mergeSort->setNomeAlgoritmo("MergeSort_PR");
-        mergeSort->setNomeInstancia(legrava->getNomeInstacia());
-        mergeSort->setTamanhoInstancia(legrava->getTamanhaoArquivo());
-        mergeSort->setTipoInstancia(legrava->getTipoInstacia());
-        ordenacao = mergeSort;
-        cout << "Ordenado..." << endl;
-        ((MergeSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo(), 2);
-        cout << "Oerdenação concluida! \n\n "  << endl;
-
-        cout << "Gerando arquivo..." << endl;
-        legrava->gravaInfo(ordenacao);
-        cout << "Arquivo gerado! \n" << endl;
-    }
-    free(mergeSort);
-
-
-    cout << "\n************ Utilizando o algoritmo QuickSort MEDPE ! ************\n" << endl;
-    for (int i = 0; i < (int)arquivos.size(); i++){
-
-        v = legrava->lerArquivo(arquivos[i]);
-
-        quick->setNomeAlgoritmo("QuickSort_MEDPE"); // maior entre os dois primeiros elementos
-        quick->setNomeInstancia(legrava->getNomeInstacia());
-        quick->setTamanhoInstancia(legrava->getTamanhaoArquivo());
-        quick->setTipoInstancia(legrava->getTipoInstacia());
-        ordenacao = quick;
-        cout << "Ordenado..." << endl;
-        ((QuickSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo(), 1);
-        cout << "Oerdenação concluida! \n\n "  << endl;
-
-        cout << "Gerando arquivo..." << endl;
-        legrava->gravaInfo(ordenacao);
-        cout << "Arquivo gerado! \n" << endl;
-    }
-
-    cout << "\n************ Utilizando o algoritmo QuickSort MEPEPC ! ************\n" << endl;
-    for (int i = 0; i < (int)arquivos.size(); i++){
-
-        v = legrava->lerArquivo(arquivos[i]);
-
-        quick->setNomeAlgoritmo("QuickSort_MEPEPC"); // maior entre o primeiro elemento e o elemento da posição central do vetor
-        quick->setNomeInstancia(legrava->getNomeInstacia());
-        quick->setTamanhoInstancia(legrava->getTamanhaoArquivo());
-        quick->setTipoInstancia(legrava->getTipoInstacia());
-        ordenacao = quick;
-        cout << "Ordenado..." << endl;
-        ((QuickSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo(), 2);
-        cout << "Oerdenação concluida! \n\n "  << endl;
-
-        cout << "Gerando arquivo..." << endl;
-        legrava->gravaInfo(ordenacao);
-        cout << "Arquivo gerado! \n" << endl;
-    }
-
-    cout << "\n************ Utilizando o algoritmo QuickSort MEDEPA ! ************\n" << endl;
-    for (int i = 0; i < (int)arquivos.size(); i++){
-
-        v = legrava->lerArquivo(arquivos[i]);
-
-        quick->setNomeAlgoritmo("QuickSort_MEDEPA"); // o maior entre dois elementos de posições aleatórias
-        quick->setNomeInstancia(legrava->getNomeInstacia());
-        quick->setTamanhoInstancia(legrava->getTamanhaoArquivo());
-        quick->setTipoInstancia(legrava->getTipoInstacia());
-        ordenacao = quick;
-        cout << "Ordenado..." << endl;
-        ((QuickSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo(), 2);
-        cout << "Oerdenação concluida! \n\n "  << endl;
-
-        cout << "Gerando arquivo..." << endl;
-        legrava->gravaInfo(ordenacao);
-        cout << "Arquivo gerado! \n" << endl;
-    }
-
-    cout << "\n************ Utilizando o algoritmo QuickSort ! ************\n" << endl;
-    for (int i = 0; i < (int)arquivos.size(); i++){
-
-        v = legrava->lerArquivo(arquivos[i]);
-
-        quick->setNomeAlgoritmo("QuickSort"); // o maior entre dois elementos de posições aleatórias
-        quick->setNomeInstancia(legrava->getNomeInstacia());
-        quick->setTamanhoInstancia(legrava->getTamanhaoArquivo());
-        quick->setTipoInstancia(legrava->getTipoInstacia());
-        ordenacao = quick;
-        cout << "Ordenado..." << endl;
-        ((QuickSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo(), 4);
-        cout << "Oerdenação concluida! \n\n "  << endl;
-
-        cout << "Gerando arquivo..." << endl;
-        legrava->gravaInfo(ordenacao);
-        cout << "Arquivo gerado! \n" << endl;
-    }
-
-    free(quick);
-
-
-    cout << "\n************ Utilizando o algoritmo RadixSort! ************\n" << endl;
-    for (int i = 0; i < (int)arquivos.size(); i++){
-
-        v = legrava->lerArquivo(arquivos[i]);
-
-        radix->setNomeAlgoritmo("RadixSort");
-        radix->setNomeInstancia(legrava->getNomeInstacia());
-        radix->setTamanhoInstancia(legrava->getTamanhaoArquivo());
-        radix->setTipoInstancia(legrava->getTipoInstacia());
-        ordenacao = radix;
-        cout << "Ordenado..." << endl;
-        ((RadixSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo());
-        cout << "Oerdenação concluida! \n\n "  << endl;
-
-        cout << "Gerando arquivo..." << endl;
-        legrava->gravaInfo(ordenacao);
-        cout << "Arquivo gerado! \n" << endl;
-    }
-    free(radix);
-
-    cout << "\n************ Utilizando o algoritmo SelectionSort! ************\n" << endl;
-    for (int i = 0; i < (int)arquivos.size(); i++){
-
-        v = legrava->lerArquivo(arquivos[i]);
-
-        selection->setNomeAlgoritmo("SelectionSort");
-        selection->setNomeInstancia(legrava->getNomeInstacia());
-        selection->setTamanhoInstancia(legrava->getTamanhaoArquivo());
-        selection->setTipoInstancia(legrava->getTipoInstacia());
-        ordenacao = selection;
-        cout << "Ordenado..." << endl;
-        ((SelectionSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo());
-        cout << "Oerdenação concluida! \n\n "  << endl;
-
-        cout << "Gerando arquivo..." << endl;
-        legrava->gravaInfo(ordenacao);
-        cout << "Arquivo gerado! \n" << endl;
-    }
-    free(selection);
 
 
     free(v);

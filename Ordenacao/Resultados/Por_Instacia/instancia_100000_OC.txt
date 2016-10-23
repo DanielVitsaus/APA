@@ -1,0 +1,84 @@
+Algoritmo -> CountingSort
+   Tamanho -> 100000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.00234632
+   Numero de instruções -> 3000017
+   Data da execução -> Sat Oct 22 09:00:36 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> HeapSort
+   Tamanho -> 100000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.02001222
+   Numero de instruções -> 29234851
+   Data da execução -> Sat Oct 22 09:00:36 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> MergeSort_MA
+   Tamanho -> 100000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.02116266
+   Numero de instruções -> 24379398
+   Data da execução -> Sat Oct 22 09:00:36 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> MergeSort_PR
+   Tamanho -> 100000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.02109936
+   Numero de instruções -> 24479400
+   Data da execução -> Sat Oct 22 09:00:36 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort
+   Tamanho -> 100000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 14.41879368
+   Numero de instruções -> 25001149987
+   Data da execução -> Sat Oct 22 09:00:51 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort_MEDPE
+   Tamanho -> 100000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 6.15088129
+   Numero de instruções -> 2501200000
+   Data da execução -> Sat Oct 22 09:01:39 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort_MEPEPC
+   Tamanho -> 100000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.00527654
+   Numero de instruções -> 3238391
+   Data da execução -> Sat Oct 22 09:01:49 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort_MEDEPA
+   Tamanho -> 100000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.00879246
+   Numero de instruções -> 2965297
+   Data da execução -> Sat Oct 22 09:01:49 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> RadixSort
+   Tamanho -> 100000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.01251933
+   Numero de instruções -> 13500528
+   Data da execução -> Sat Oct 22 09:01:49 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> SelectionSort
+   Tamanho -> 100000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 13.33069897
+   Numero de instruções -> 15000649996
+   Data da execução -> Sat Oct 22 09:02:02 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> BubbleSort
+   Tamanho -> 100000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.00031282
+   Numero de instruções -> 599998
+   Data da execução -> Sat Oct 22 09:02:43 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> InsertonSort
+   Tamanho -> 100000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.00059288
+   Numero de instruções -> 1300003
+   Data da execução -> Sat Oct 22 09:06:32 2016
+---------------------------------------------------------------------------------------------------

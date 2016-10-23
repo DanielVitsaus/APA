@@ -156,7 +156,7 @@ void GeraInstancias::semRepeticao(int tam){
 
     this->arquivoGravacao.open(diretorio, ios::out);
 
-    this->arquivoGravacao << "instancia_"+Result+"_SC" << endl;
+    this->arquivoGravacao << "instancia_"+Result+"_SR" << endl;
     this->arquivoGravacao << "SEM_REPETIÇÃO" << endl;
     this->arquivoGravacao << tam;
     this->arquivoGravacao << endl;

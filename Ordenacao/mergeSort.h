@@ -15,10 +15,6 @@ class MergeSort  : public Ordenacao
         void mergeSortSimples(int* vet, int tam, int* temp, register unsigned long long int &instrucoes);
         void mergeSimple(int* vet, int tam, int* tem, register unsigned long long int &instrucoes);
 
-        //void mergeSortAlocacao(int * vet, int tam);
-
-        //void mergeSortParametroAd(int * vet, int tam);
-
         void setIDAlgoritmo(int num){ idAlgoritmo = num; };
 
 

@@ -1,0 +1,49 @@
+Algoritmo -> CountingSort
+   Tamanho -> 10000000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.23409538
+   Numero de instruções -> 300000017
+   Data da execução -> Sat Oct 22 09:11:23 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> RadixSort
+   Tamanho -> 10000000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 1.99559796
+   Numero de instruções -> 1770000702
+   Data da execução -> Sat Oct 22 09:14:01 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> HeapSort
+   Tamanho -> 10000000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 2.86628842
+   Numero de instruções -> 4094052341
+   Data da execução -> Sat Oct 22 09:18:45 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> MergeSort_MA
+   Tamanho -> 10000000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 2.58665395
+   Numero de instruções -> 3298835558
+   Data da execução -> Sat Oct 22 09:23:02 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> MergeSort_PR
+   Tamanho -> 10000000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 2.67284679
+   Numero de instruções -> 3308835560
+   Data da execução -> Sat Oct 22 09:27:14 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> BubbleSort
+   Tamanho -> 10000000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.03122812
+   Numero de instruções -> 59999998
+   Data da execução -> Sat Oct 22 10:52:56 2016
+---------------------------------------------------------------------------------------------------
+Algoritmo -> InsertonSort
+   Tamanho -> 10000000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.05685816
+   Numero de instruções -> 130000003
+   Data da execução -> Sat Oct 22 10:53:17 2016
+---------------------------------------------------------------------------------------------------
