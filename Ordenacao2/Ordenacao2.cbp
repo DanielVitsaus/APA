@@ -32,6 +32,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Dados.cpp" />
+		<Unit filename="Dados.h" />
 		<Unit filename="GeraInstancias.cpp" />
 		<Unit filename="GeraInstancias.h" />
 		<Unit filename="LeituraGravacao.cpp" />
