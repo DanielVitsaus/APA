@@ -1,0 +1,185 @@
+# depslib dependency file v1.0
+1492651977 source:/home/daniel/Projetos/TrabalhoAPA/Ordenacao2/Ordenacao2/bubbleSort.cpp
+	"bubbleSort.h"
+	<vector>
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+	<stdio.h>
+	<stdlib.h>
+
+1492651977 /home/daniel/Projetos/TrabalhoAPA/Ordenacao2/Ordenacao2/bubbleSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+
+1492653674 /home/daniel/Projetos/TrabalhoAPA/Ordenacao2/Ordenacao2/Ordenacao.h
+	<time.h>
+	<chrono>
+	<ctime>
+	<stdio.h>
+	<stdlib.h>
+	<iostream>
+
+1492651977 source:/home/daniel/Projetos/TrabalhoAPA/Ordenacao2/Ordenacao2/GeraInstancias.cpp
+	"util.h"
+	"GeraInstancias.h"
+	<iostream>
+	<fstream>
+	<string.h>
+	<sstream>
+	<random>
+
+1492651977 /home/daniel/Projetos/TrabalhoAPA/Ordenacao2/Ordenacao2/util.h
+	<ctime>
+	<unistd.h>
+	<sys/times.h>
+	<vector>
+
+1492651977 /home/daniel/Projetos/TrabalhoAPA/Ordenacao2/Ordenacao2/GeraInstancias.h
+	<vector>
+	<iostream>
+	<fstream>
+
+1492651977 source:/home/daniel/Projetos/TrabalhoAPA/Ordenacao2/Ordenacao2/heapSort.cpp
+	"heapSort.h"
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+	<stdio.h>
+	<stdlib.h>
+
+1492651977 /home/daniel/Projetos/TrabalhoAPA/Ordenacao2/Ordenacao2/heapSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+
+1492651977 source:/home/daniel/Projetos/TrabalhoAPA/Ordenacao2/Ordenacao2/insertionSort.cpp
+	"insertionSort.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+
+1492651977 /home/daniel/Projetos/TrabalhoAPA/Ordenacao2/Ordenacao2/insertionSort.h
+	<iostream>
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+
+1492653633 source:/home/daniel/Projetos/TrabalhoAPA/Ordenacao2/Ordenacao2/LeituraGravacao.cpp
+	"LeituraGravacao.h"
+	<iostream>
+	<fstream>
+	<vector>
+	<cstdlib>
+	<dirent.h>
+	<sstream>
+	<iomanip>
+	"insertionSort.h"
+	"bubbleSort.h"
+	"selectionSort.h"
+	"heapSort.h"
+	"mergeSort.h"
+	"quickSort.h"
+
+1492651977 /home/daniel/Projetos/TrabalhoAPA/Ordenacao2/Ordenacao2/LeituraGravacao.h
+	<iostream>
+	<fstream>
+	<vector>
+	<string.h>
+	<cstdlib>
+	"Ordenacao.h"
+
+1492651977 /home/daniel/Projetos/TrabalhoAPA/Ordenacao2/Ordenacao2/selectionSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+
+1492655505 /home/daniel/Projetos/TrabalhoAPA/Ordenacao2/Ordenacao2/mergeSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+
+1492655691 /home/daniel/Projetos/TrabalhoAPA/Ordenacao2/Ordenacao2/quickSort.h
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+
+1492655738 source:/home/daniel/Projetos/TrabalhoAPA/Ordenacao2/Ordenacao2/main.cpp
+	<iostream>
+	<math.h>
+	<ctime>
+	<time.h>
+	<chrono>
+	<random>
+	"util.h"
+	"GeraInstancias.h"
+	"LeituraGravacao.h"
+	"insertionSort.h"
+	"bubbleSort.h"
+	"selectionSort.h"
+	"heapSort.h"
+	"mergeSort.h"
+	"quickSort.h"
+
+1492655526 source:/home/daniel/Projetos/TrabalhoAPA/Ordenacao2/Ordenacao2/mergeSort.cpp
+	"mergeSort.h"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+	<string.h>
+
+1492651977 source:/home/daniel/Projetos/TrabalhoAPA/Ordenacao2/Ordenacao2/Ordenacao.cpp
+	"Ordenacao.h"
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+	<stdio.h>
+	<stdlib.h>
+
+1492655679 source:/home/daniel/Projetos/TrabalhoAPA/Ordenacao2/Ordenacao2/quickSort.cpp
+	"quickSort.h"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<sys/time.h>
+	<stack>
+	<set>
+	"util.h"
+
+1492651977 source:/home/daniel/Projetos/TrabalhoAPA/Ordenacao2/Ordenacao2/selectionSort.cpp
+	"selectionSort.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<sys/time.h>
+	<vector>
+	<chrono>
+	<ctime>
+
+1492651977 source:/home/daniel/Projetos/TrabalhoAPA/Ordenacao2/Ordenacao2/util.cpp
+	"util.h"
+	<climits>
+	<cmath>
+	<cstdlib>
+	<cstdio>
+	<sys/timeb.h>
+	<sys/resource.h>
+	<vector>
+	<iostream>
+

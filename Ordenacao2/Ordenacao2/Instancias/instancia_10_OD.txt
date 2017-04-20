@@ -1,0 +1,14 @@
+instancia_10_OD
+ORDENAÇÃO_DECRESCENTE
+10
+
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
