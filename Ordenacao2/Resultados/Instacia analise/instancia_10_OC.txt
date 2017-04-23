@@ -1,0 +1,42 @@
+Algoritmo -> HeapSort
+   Tamanho -> 10
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.00000671
+   Numero de instruções -> 304
+   Data da execução -> Sat Apr 22 23:29:06 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> MergeSort_MA
+   Tamanho -> 10
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.00000670
+   Numero de instruções -> 368
+   Data da execução -> Sat Apr 22 23:29:24 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort
+   Tamanho -> 10
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.00000343
+   Numero de instruções -> 124
+   Data da execução -> Sat Apr 22 23:29:36 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> SelectionSort
+   Tamanho -> 10
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.00000254
+   Numero de instruções -> 120
+   Data da execução -> Sat Apr 22 23:29:43 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> BubbleSort
+   Tamanho -> 10
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.00000074
+   Numero de instruções -> 13
+   Data da execução -> Sat Apr 22 23:29:50 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> InsertonSort
+   Tamanho -> 10
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.00000183
+   Numero de instruções -> 62
+   Data da execução -> Sat Apr 22 23:29:57 2017
+---------------------------------------------------------------------------------------------------

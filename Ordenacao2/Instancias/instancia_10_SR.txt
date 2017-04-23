@@ -1,14 +1,14 @@
-instancia_10_SC
+instancia_10_SR
 SEM_REPETIÇÃO
 10
 
+5
 7
 6
-5
-9
-3
-4
-1
-8
-10
 2
+3
+10
+4
+8
+9
+1

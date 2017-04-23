@@ -4,6 +4,7 @@
 #include <time.h>
 #include <chrono>
 #include <random>
+#include <stdlib.h>
 
 #include "util.h"
 #include "GeraInstancias.h"
@@ -14,7 +15,7 @@
 #include "heapSort.h"
 #include "mergeSort.h"
 #include "quickSort.h"
-
+#include "Dados.h"
 using namespace std;
 
 void geraInstancias();
@@ -23,13 +24,13 @@ void geraInstancias();
 
 int main()
 {
-    int *v = NULL;
+    //geraInstancias();
+   int *v = NULL;
     vector<string> arquivos;
     LeituraGravacao* legrava = new LeituraGravacao();
     arquivos = legrava->listaArquivos();
-
     Ordenacao* ordenacao ;
-
+    Dados *dados = (Dados *)malloc(10*sizeof(Dados));;
     BubbleSort* bubbleSort = new BubbleSort();
     HeapSort* heap = new HeapSort();
     InsertonSort* insertSort = new InsertonSort();
@@ -38,11 +39,11 @@ int main()
     SelectionSort* selection = new SelectionSort();
 
 
-
     cout << "\n************ Utilizando o algoritmo HeapSort! ************\n" << endl;
     for (int i = (int)arquivos.size() -1 ; i >= 0; i--){
-
         v = legrava->lerArquivo(arquivos[i]);
+        dados  =(Dados*)(realloc(dados,(legrava->getTamanhaoArquivo())*sizeof(Dados)));
+        legrava->lerDados(arquivos[i], dados);
 
         heap->setNomeAlgoritmo("HeapSort");
         heap->setNomeInstancia(legrava->getNomeInstacia());
@@ -50,7 +51,7 @@ int main()
         heap->setTipoInstancia(legrava->getTipoInstacia());
         ordenacao = heap;
         cout << "Ordenado..." << endl;
-        ((HeapSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo());
+        ((HeapSort*)ordenacao)->ordenaDados( dados, legrava->getTamanhaoArquivo());
         cout << "Oerdenação concluida! \n\n "  << endl;
 
         cout << "Gerando arquivo..." << endl;
@@ -60,11 +61,12 @@ int main()
     free(heap);
 
 
-
     cout << "\n************ Utilizando o algoritmo MergeSort ! ************\n" << endl;
     for (int i = (int)arquivos.size() -1 ; i >= 0; i--){
 
         v = legrava->lerArquivo(arquivos[i]);
+        dados  =(Dados*)(realloc(dados,(legrava->getTamanhaoArquivo())*sizeof(Dados)));
+        legrava->lerDados(arquivos[i], dados);
 
         mergeSort->setNomeAlgoritmo("MergeSort_MA");
         mergeSort->setNomeInstancia(legrava->getNomeInstacia());
@@ -72,29 +74,31 @@ int main()
         mergeSort->setTipoInstancia(legrava->getTipoInstacia());
         ordenacao = mergeSort;
         cout << "Ordenado..." << endl;
-        ((MergeSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo() );
+        ((MergeSort*)ordenacao)->ordenaDados( dados, legrava->getTamanhaoArquivo() );
         cout << "Oerdenação concluida! \n\n "  << endl;
-
         cout << "Gerando arquivo..." << endl;
         legrava->gravaInfo(ordenacao);
         cout << "Arquivo gerado! \n" << endl;
     }
+
 
 
     cout << "\n************ Utilizando o algoritmo QuickSort ! ************\n" << endl;
     for (int i = (int)arquivos.size() -1 ; i >= 0; i--){
 
         v = legrava->lerArquivo(arquivos[i]);
+        dados  =(Dados*)(realloc(dados,(legrava->getTamanhaoArquivo())*sizeof(Dados)));
+        legrava->lerDados(arquivos[i], dados);
 
         quick->setNomeAlgoritmo("QuickSort"); // o maior entre dois elementos de posições aleatórias
         quick->setNomeInstancia(legrava->getNomeInstacia());
         quick->setTamanhoInstancia(legrava->getTamanhaoArquivo());
         quick->setTipoInstancia(legrava->getTipoInstacia());
         ordenacao = quick;
-        cout << "Ordenado..." << endl;
-        ((QuickSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo());
-        cout << "Oerdenação concluida! \n\n "  << endl;
 
+        cout << "Ordenado..." << endl;
+        ((QuickSort*)ordenacao)->ordenaDados( dados, legrava->getTamanhaoArquivo());
+        cout << "Oerdenação concluida! \n\n "  << endl;
         cout << "Gerando arquivo..." << endl;
         legrava->gravaInfo(ordenacao);
         cout << "Arquivo gerado! \n" << endl;
@@ -102,45 +106,49 @@ int main()
 
     }
 
-
+// Algortimos ineficientes
     cout << "\n************ Utilizando o algoritmo SelectionSort! ************\n" << endl;
     for (int i = (int)arquivos.size() -1 ; i >= 0; i--){
-
         v = legrava->lerArquivo(arquivos[i]);
+        dados  =(Dados*)(realloc(dados,(legrava->getTamanhaoArquivo())*sizeof(Dados)));
+        legrava->lerDados(arquivos[i], dados);
 
-        selection->setNomeAlgoritmo("SelectionSort");
-        selection->setNomeInstancia(legrava->getNomeInstacia());
-        selection->setTamanhoInstancia(legrava->getTamanhaoArquivo());
-        selection->setTipoInstancia(legrava->getTipoInstacia());
-        ordenacao = selection;
-        cout << "Ordenado..." << endl;
-        ((SelectionSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo());
-        cout << "Oerdenação concluida! \n\n "  << endl;
-
-        cout << "Gerando arquivo..." << endl;
-        legrava->gravaInfo(ordenacao);
-        cout << "Arquivo gerado! \n" << endl;
+        if(legrava->getTamanhaoArquivo() < 10000){
+            selection->setNomeAlgoritmo("SelectionSort");
+            selection->setNomeInstancia(legrava->getNomeInstacia());
+            selection->setTamanhoInstancia(legrava->getTamanhaoArquivo());
+            selection->setTipoInstancia(legrava->getTipoInstacia());
+            ordenacao = selection;
+            cout << "Ordenado..." << endl;
+            ((SelectionSort*)ordenacao)->ordenaDados( dados, legrava->getTamanhaoArquivo());
+            cout << "Oerdenação concluida! \n\n "  << endl;
+            cout << "Gerando arquivo..." << endl;
+            legrava->gravaInfo(ordenacao);
+            cout << "Arquivo gerado! \n" << endl;
+        }
     }
     free(selection);
 
 
     cout << "\n************ Utilizando o algoritmo BubbleSort! ************\n" << endl;
     for (int i = (int)arquivos.size() -1 ; i >= 0; i--){
-
         v = legrava->lerArquivo(arquivos[i]);
+        dados  =(Dados*)(realloc(dados,(legrava->getTamanhaoArquivo())*sizeof(Dados)));
+        legrava->lerDados(arquivos[i], dados);
+        if(legrava->getTamanhaoArquivo() < 10000){
+            bubbleSort->setNomeAlgoritmo("BubbleSort");
+            bubbleSort->setNomeInstancia(legrava->getNomeInstacia());
+            bubbleSort->setTamanhoInstancia(legrava->getTamanhaoArquivo());
+            bubbleSort->setTipoInstancia(legrava->getTipoInstacia());
+            ordenacao = bubbleSort;
 
-        bubbleSort->setNomeAlgoritmo("BubbleSort");
-        bubbleSort->setNomeInstancia(legrava->getNomeInstacia());
-        bubbleSort->setTamanhoInstancia(legrava->getTamanhaoArquivo());
-        bubbleSort->setTipoInstancia(legrava->getTipoInstacia());
-        ordenacao = bubbleSort;
-        cout << "Ordenado..." << endl;
-        ((BubbleSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo());
-        cout << "Oerdenação concluida! \n\n "  << endl;
-
-        cout << "Gerando arquivo..." << endl;
-        legrava->gravaInfo(ordenacao);
-        cout << "Arquivo gerado! \n" << endl;
+            cout << "Ordenado..." << endl;
+            ((BubbleSort*)ordenacao)->ordenaDados( dados, legrava->getTamanhaoArquivo());
+            cout << "Oerdenação concluida! \n\n "  << endl;
+            cout << "Gerando arquivo..." << endl;
+            legrava->gravaInfo(ordenacao);
+            cout << "Arquivo gerado! \n" << endl;
+        }
     }
 
     free(bubbleSort);
@@ -150,19 +158,21 @@ int main()
     for (int i = (int)arquivos.size() -1 ; i >= 0; i--){
 
         v = legrava->lerArquivo(arquivos[i]);
-
-        insertSort->setNomeAlgoritmo("InsertonSort");
-        insertSort->setNomeInstancia(legrava->getNomeInstacia());
-        insertSort->setTamanhoInstancia(legrava->getTamanhaoArquivo());
-        insertSort->setTipoInstancia(legrava->getTipoInstacia());
-        ordenacao = insertSort;
-        cout << "Ordenado..." << endl;
-        ((InsertonSort*)ordenacao)->ordena( v, legrava->getTamanhaoArquivo());
-        cout << "Oerdenação concluida! \n\n "  << endl;
-
-        cout << "Gerando arquivo..." << endl;
-        legrava->gravaInfo(ordenacao);
-        cout << "Arquivo gerado! \n" << endl;
+        dados  =(Dados*)(realloc(dados,(legrava->getTamanhaoArquivo())*sizeof(Dados)));
+        legrava->lerDados(arquivos[i], dados);
+        if(legrava->getTamanhaoArquivo() < 10000){
+            insertSort->setNomeAlgoritmo("InsertonSort");
+            insertSort->setNomeInstancia(legrava->getNomeInstacia());
+            insertSort->setTamanhoInstancia(legrava->getTamanhaoArquivo());
+            insertSort->setTipoInstancia(legrava->getTipoInstacia());
+            ordenacao = insertSort;
+            cout << "Ordenado..." << endl;
+            ((InsertonSort*)ordenacao)->ordenaDados( dados, legrava->getTamanhaoArquivo());
+            cout << "Oerdenação concluida! \n\n "  << endl;
+            cout << "Gerando arquivo..." << endl;
+            legrava->gravaInfo(ordenacao);
+            cout << "Arquivo gerado! \n" << endl;
+        }
     }
     free(insertSort);
 
@@ -170,8 +180,7 @@ int main()
     free(v);
     free(legrava);
     arquivos.clear();
-
-
+    free(dados);
     return 0;
 }
 
@@ -211,6 +220,17 @@ void geraInstancias()
     cout << " -> Sem repeticao..." << endl;
     gera->semRepeticao( (int) pow(10, 3) );
 
+    cout << "\nGerando instacais de tamanho 10^4:" << endl;
+    cout << " -> Com repeticao..." << endl;
+    gera->comRepeticao( (int) pow(10, 4) );
+    cout << " -> Ordem Crescente..." << endl;
+    gera->ordenCrescente( (int) pow(10, 4) );
+    cout << " -> Ordem Decrescente..." << endl;
+    gera->ordenDecrecente( (int) pow(10, 4) );
+    cout << " -> Sem repeticao..." << endl;
+    gera->semRepeticao( (int) pow(10, 4) );
+
+
     cout << "\nGerando instacais de tamanho 10^5:" << endl;
     cout << " -> Com repeticao..." << endl;
     gera->comRepeticao( (int) pow(10, 5) );
@@ -222,25 +242,14 @@ void geraInstancias()
     gera->semRepeticao( (int) pow(10, 5) );
 
 
-    cout << "\nGerando instacais de tamanho 10^7:" << endl;
+    cout << "\nGerando instacais de tamanho 10^6:" << endl;
     cout << " -> Com repeticao..." << endl;
-    gera->comRepeticao( (int) pow(10, 7) );
+    gera->comRepeticao( (int) pow(10, 6) );
     cout << " -> Ordem Crescente..." << endl;
-    gera->ordenCrescente( (int) pow(10, 7) );
+    gera->ordenCrescente( (int) pow(10, 6) );
     cout << " -> Ordem Decrescente..." << endl;
-    gera->ordenDecrecente( (int) pow(10, 7) );
+    gera->ordenDecrecente( (int) pow(10, 6) );
     cout << " -> Sem repeticao..." << endl;
-    gera->semRepeticao( (int) pow(10, 7) );
-
-
-    cout << "\nGerando instacais de tamanho 10^8:" << endl;
-    cout << " -> Com repeticao..." << endl;
-    gera->comRepeticao( (int) pow(10, 8) );
-    cout << " -> Ordem Crescente..." << endl;
-    gera->ordenCrescente( (int) pow(10, 8) );
-    cout << " -> Ordem Decrescente..." << endl;
-    gera->ordenDecrecente( (int) pow(10, 8) );
-    cout << " -> Sem repeticao..." << endl;
-    gera->semRepeticao( (int) pow(10, 8) );
+    gera->semRepeticao( (int) pow(10, 6) );
 
 }

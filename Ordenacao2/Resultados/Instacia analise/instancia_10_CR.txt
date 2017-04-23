@@ -1,0 +1,42 @@
+Algoritmo -> HeapSort
+   Tamanho -> 10
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 0.00000620
+   Numero de instruções -> 276
+   Data da execução -> Sat Apr 22 23:29:07 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> MergeSort_MA
+   Tamanho -> 10
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 0.00000731
+   Numero de instruções -> 361
+   Data da execução -> Sat Apr 22 23:29:24 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort
+   Tamanho -> 10
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 0.00000514
+   Numero de instruções -> 205
+   Data da execução -> Sat Apr 22 23:29:36 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> SelectionSort
+   Tamanho -> 10
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 0.00000474
+   Numero de instruções -> 193
+   Data da execução -> Sat Apr 22 23:29:43 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> BubbleSort
+   Tamanho -> 10
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 0.00000689
+   Numero de instruções -> 249
+   Data da execução -> Sat Apr 22 23:29:50 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> InsertonSort
+   Tamanho -> 10
+   Tipo -> COM_REPETIÇÃO
+   Tempo de execução -> 0.00000373
+   Numero de instruções -> 157
+   Data da execução -> Sat Apr 22 23:29:57 2017
+---------------------------------------------------------------------------------------------------

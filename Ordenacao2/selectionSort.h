@@ -5,6 +5,7 @@
 #include <chrono>
 #include <ctime>
 #include "Ordenacao.h"
+#include "Dados.h"
 
 using namespace std;
 
@@ -16,6 +17,7 @@ class SelectionSort : public Ordenacao
     public:
         SelectionSort(){ idAlgoritmo = 11; };
         void ordena(int * vet, int tam);
+        void ordenaDados(Dados * dados, int tam);
 
 };
 

@@ -1,0 +1,21 @@
+Algoritmo -> HeapSort
+   Tamanho -> 10000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.01839184
+   Numero de instruções -> 1067034
+   Data da execução -> Sat Apr 22 23:28:50 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> MergeSort_MA
+   Tamanho -> 10000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.01430115
+   Numero de instruções -> 1223527
+   Data da execução -> Sat Apr 22 23:29:11 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort
+   Tamanho -> 10000
+   Tipo -> ORDENAÇÃO_CRESCENTE
+   Tempo de execução -> 0.00438600
+   Numero de instruções -> 143116
+   Data da execução -> Sat Apr 22 23:29:27 2017
+---------------------------------------------------------------------------------------------------

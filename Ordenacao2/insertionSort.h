@@ -6,7 +6,7 @@
 #include <chrono>
 #include <ctime>
 #include "Ordenacao.h"
-
+#include "Dados.h"
 using namespace std;
 
 class InsertonSort : public Ordenacao
@@ -17,6 +17,7 @@ class InsertonSort : public Ordenacao
     public:
         InsertonSort(){ idAlgoritmo = 4; };
         void ordena(int * vet, int tam);
+        void ordenaDados(Dados * dados, int tam);
 };
 
 

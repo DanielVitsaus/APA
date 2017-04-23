@@ -1,0 +1,21 @@
+Algoritmo -> HeapSort
+   Tamanho -> 10000
+   Tipo -> SEM_REPETIÇÃO
+   Tempo de execução -> 0.02013351
+   Numero de instruções -> 1016295
+   Data da execução -> Sat Apr 22 23:28:50 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> MergeSort_MA
+   Tamanho -> 10000
+   Tipo -> SEM_REPETIÇÃO
+   Tempo de execução -> 0.01903011
+   Numero de instruções -> 1213622
+   Data da execução -> Sat Apr 22 23:29:11 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort
+   Tamanho -> 10000
+   Tipo -> SEM_REPETIÇÃO
+   Tempo de execução -> 0.01121609
+   Numero de instruções -> 470818
+   Data da execução -> Sat Apr 22 23:29:27 2017
+---------------------------------------------------------------------------------------------------

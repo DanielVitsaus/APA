@@ -5,7 +5,7 @@
 #include <chrono>
 #include <ctime>
 #include "Ordenacao.h"
-
+#include "Dados.h"
 using namespace std;
 
 class BubbleSort  : public Ordenacao
@@ -18,6 +18,7 @@ class BubbleSort  : public Ordenacao
     public:
         BubbleSort(){ idAlgoritmo = 1; };
         void ordena(int * vet, int tam);
+        void ordenaDados(Dados * dados, int tam);
 
 };
 

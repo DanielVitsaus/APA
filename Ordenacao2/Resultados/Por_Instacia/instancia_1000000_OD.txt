@@ -1,0 +1,77 @@
+Algoritmo -> HeapSort
+   Tamanho -> 1000000
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 2.66656280
+   Numero de instruções -> 145467140
+   Data da execução -> Sat Apr 22 23:29:06 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> MergeSort_MA
+   Tamanho -> 1000000
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 2.04645324
+   Numero de instruções -> 167611384
+   Data da execução -> Sat Apr 22 23:29:24 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort
+   Tamanho -> 1000000
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 0.60922956
+   Numero de instruções -> 19572832
+   Data da execução -> Sat Apr 22 23:29:36 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> HeapSort
+   Tamanho -> 1000000
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 2.65383482
+   Numero de instruções -> 145467140
+   Data da execução -> Sat Apr 22 23:53:31 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> MergeSort_MA
+   Tamanho -> 1000000
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 2.05436063
+   Numero de instruções -> 167611384
+   Data da execução -> Sat Apr 22 23:53:47 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> HeapSort
+   Tamanho -> 1000000
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 2.70055246
+   Numero de instruções -> 145467140
+   Data da execução -> Sat Apr 22 23:54:15 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> MergeSort_MA
+   Tamanho -> 1000000
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 2.04991889
+   Numero de instruções -> 167611384
+   Data da execução -> Sat Apr 22 23:54:32 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort
+   Tamanho -> 1000000
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 0.60440636
+   Numero de instruções -> 19572832
+   Data da execução -> Sat Apr 22 23:54:42 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> HeapSort
+   Tamanho -> 1000000
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 2.65873170
+   Numero de instruções -> 145467140
+   Data da execução -> Sat Apr 22 23:59:07 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> MergeSort_MA
+   Tamanho -> 1000000
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 2.07202411
+   Numero de instruções -> 167611384
+   Data da execução -> Sat Apr 22 23:59:24 2017
+---------------------------------------------------------------------------------------------------
+Algoritmo -> QuickSort
+   Tamanho -> 1000000
+   Tipo -> ORDENAÇÃO_DECRESCENTE
+   Tempo de execução -> 0.60623449
+   Numero de instruções -> 19572832
+   Data da execução -> Sat Apr 22 23:59:34 2017
+---------------------------------------------------------------------------------------------------

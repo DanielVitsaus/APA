@@ -6,7 +6,7 @@
 #include <vector>
 #include <string.h>
 #include <cstdlib>
-
+#include "Dados.h"
 #include "Ordenacao.h"
 
 using namespace std;
@@ -25,6 +25,7 @@ class LeituraGravacao
         char* getTipoInstacia(){ return tipoInstacia; };
         char* getNomeInstacia(){ return nomeInstacia; };
         int getTamanhaoArquivo(){ return tamanhoArquivo; };
+        void lerDados(string ar,Dados *dados);
         int* lerArquivo(string ar);
         vector<string> listaArquivos();
         void gravaVetor(int* vet, int tam, string nome);

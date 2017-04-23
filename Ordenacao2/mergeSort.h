@@ -5,7 +5,7 @@
 #include <chrono>
 #include <ctime>
 #include "Ordenacao.h"
-
+#include "Dados.h"
 using namespace std;
 
 class MergeSort  : public Ordenacao
@@ -17,9 +17,11 @@ class MergeSort  : public Ordenacao
 
         void setIDAlgoritmo(int num){ idAlgoritmo = num; };
 
-
+        void mergeSortDados(Dados* dados, int tam, register unsigned long long int &instrucoes);
+        void mergeSDados(Dados* dados, int tam, register unsigned long long int &instrucoes);
     public:
         void ordena(int * vet, int tam);
+        void ordenaDados(Dados * dados, int tam);
 
 
 };

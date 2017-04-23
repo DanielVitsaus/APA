@@ -51,7 +51,6 @@ vector<string> LeituraGravacao::listaArquivos(){
 
 }
 
-
 int* LeituraGravacao::lerArquivo(string ar)
 {
     char diretorio[100] = "Instancias//";
@@ -97,6 +96,55 @@ int* LeituraGravacao::lerArquivo(string ar)
     this->arquivoLeitura.close();
     cout << "O arquivo foi " << ar << " lido com sucesso!" << endl;
     return this->vetor;
+}
+
+
+ //***** tamanhoArquivo
+void LeituraGravacao::lerDados(string ar, Dados *dados)
+{
+    char diretorio[100] = "Instancias//";
+    strcat(diretorio,ar.c_str());
+    this->arquivoLeitura.open(diretorio,ios::binary);
+
+    int valor = 0, i = 0;
+    char buff[30];
+
+    if (!this->arquivoLeitura.is_open())
+    {
+        cout << "Arquivo nao encontrado ou danificado" << endl;
+        exit(0);
+    }
+
+    cout << "Lendo o arquivo " << ar << " ... " << endl;
+
+    // Le nome da instacia
+    this->arquivoLeitura.getline(buff,30);
+    sscanf(buff , "%s" , this->nomeInstacia);
+
+    //le o tipo da instacia
+    this->arquivoLeitura.getline(buff,30);
+    sscanf(buff , "%s" , this->tipoInstacia);
+
+    // Le o tamanha da isntacia
+    this->arquivoLeitura.getline(buff,30);
+    sscanf(buff, "%d", &this->tamanhoArquivo);
+
+    this->arquivoLeitura.getline(buff,20);
+    // aloca memoria pra o vetor
+    //this->vetor = new int[this->getTamanhaoArquivo() + 10];
+   // memset( this->vetor, 0, sizeof(int) * (this->getTamanhaoArquivo() + 10) );
+    while( (!this->arquivoLeitura.eof()) && (i < this->getTamanhaoArquivo()) )
+    {
+        this->arquivoLeitura.getline(buff,16);
+        sscanf(buff, "%d", &valor);
+        //this->vetor[i] = valor;
+        dados[i].setId(i);
+        dados[i].setSalario(valor);
+       // cout<< dados[i].getId() << "  " << dados[i].getSalario()<< endl;
+        i++;
+    }
+    this->arquivoLeitura.close();
+    cout << "O arquivo foi " << ar << " lido com sucesso!" << endl;
 }
 
 void LeituraGravacao::gravaVetor(int* vet, int tam, string nome){
@@ -160,7 +208,7 @@ void LeituraGravacao::gravaInfo(Ordenacao* algoritmo){
 //-------------------------------------------------------------------------------------------------------------------------------------------
 
 //---------- Grava um arquivo .csv --------------------------------------------------------------------------------------
-    nome = algoritmo->getNomeInstancia();
+    nome = algoritmo->getNomeAlgoritmo();
     date = algoritmo->getDate();
     nome += ".csv";
     strcat(diretorio3,nome.c_str());
@@ -170,8 +218,8 @@ void LeituraGravacao::gravaInfo(Ordenacao* algoritmo){
     this->arquivoGravacao << algoritmo->getNomeAlgoritmo() << ";"
                           << algoritmo->getTamanhoInstancia() << ";"
                           << algoritmo->getTipoInstancia() << ";"
-                          << "T_em_s -> "<< fixed << setprecision(8) << algoritmo->getRunTime() << ";"
-                          << "N_I -> " << algoritmo->getNumInstrucao() << ";"
+                          << fixed << setprecision(8) << algoritmo->getRunTime() << ";"
+                          << algoritmo->getNumInstrucao() << ";"
                           <<  ctime(&date) <<endl;
 
     this->arquivoGravacao.close();

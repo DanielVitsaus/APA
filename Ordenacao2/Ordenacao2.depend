@@ -183,3 +183,215 @@
 	<vector>
 	<iostream>
 
+1492914016 source:/home/welton/Área de Trabalho/trabalho de APA/APA/Ordenacao2/bubbleSort.cpp
+	"bubbleSort.h"
+	<vector>
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+	<stdio.h>
+	<stdlib.h>
+
+1492913097 /home/welton/Área de Trabalho/trabalho de APA/APA/Ordenacao2/bubbleSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+	"Dados.h"
+
+1492871653 /home/welton/Área de Trabalho/trabalho de APA/APA/Ordenacao2/Ordenacao.h
+	<time.h>
+	<chrono>
+	<ctime>
+	<stdio.h>
+	<stdlib.h>
+	<iostream>
+
+1492871653 source:/home/welton/Área de Trabalho/trabalho de APA/APA/Ordenacao2/Dados.cpp
+	"Dados.h"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+	<string.h>
+
+1492871653 /home/welton/Área de Trabalho/trabalho de APA/APA/Ordenacao2/Dados.h
+	<time.h>
+	<chrono>
+	<ctime>
+	<stdio.h>
+	<stdlib.h>
+	<iostream>
+
+1492875364 source:/home/welton/Área de Trabalho/trabalho de APA/APA/Ordenacao2/GeraInstancias.cpp
+	"util.h"
+	"GeraInstancias.h"
+	<iostream>
+	<fstream>
+	<string.h>
+	<sstream>
+	<random>
+
+1492871653 /home/welton/Área de Trabalho/trabalho de APA/APA/Ordenacao2/util.h
+	<ctime>
+	<unistd.h>
+	<sys/times.h>
+	<vector>
+
+1492871653 /home/welton/Área de Trabalho/trabalho de APA/APA/Ordenacao2/GeraInstancias.h
+	<vector>
+	<iostream>
+	<fstream>
+
+1492914171 source:/home/welton/Área de Trabalho/trabalho de APA/APA/Ordenacao2/heapSort.cpp
+	"heapSort.h"
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+	<stdio.h>
+	<stdlib.h>
+
+1492887577 /home/welton/Área de Trabalho/trabalho de APA/APA/Ordenacao2/heapSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+	"Dados.h"
+
+1492914228 source:/home/welton/Área de Trabalho/trabalho de APA/APA/Ordenacao2/insertionSort.cpp
+	"insertionSort.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+
+1492913328 /home/welton/Área de Trabalho/trabalho de APA/APA/Ordenacao2/insertionSort.h
+	<iostream>
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+	"Dados.h"
+
+1492908044 source:/home/welton/Área de Trabalho/trabalho de APA/APA/Ordenacao2/LeituraGravacao.cpp
+	"LeituraGravacao.h"
+	<iostream>
+	<fstream>
+	<vector>
+	<cstdlib>
+	<dirent.h>
+	<sstream>
+	<iomanip>
+	"insertionSort.h"
+	"bubbleSort.h"
+	"selectionSort.h"
+	"heapSort.h"
+	"mergeSort.h"
+	"quickSort.h"
+
+1492885774 /home/welton/Área de Trabalho/trabalho de APA/APA/Ordenacao2/LeituraGravacao.h
+	<iostream>
+	<fstream>
+	<vector>
+	<string.h>
+	<cstdlib>
+	"Dados.h"
+	"Ordenacao.h"
+
+1492912412 /home/welton/Área de Trabalho/trabalho de APA/APA/Ordenacao2/selectionSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+	"Dados.h"
+
+1492909000 /home/welton/Área de Trabalho/trabalho de APA/APA/Ordenacao2/mergeSort.h
+	<time.h>
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+	"Dados.h"
+
+1492911308 /home/welton/Área de Trabalho/trabalho de APA/APA/Ordenacao2/quickSort.h
+	<chrono>
+	<ctime>
+	"Ordenacao.h"
+	"Dados.h"
+
+1492915990 source:/home/welton/Área de Trabalho/trabalho de APA/APA/Ordenacao2/main.cpp
+	<iostream>
+	<math.h>
+	<ctime>
+	<time.h>
+	<chrono>
+	<random>
+	<stdlib.h>
+	"util.h"
+	"GeraInstancias.h"
+	"LeituraGravacao.h"
+	"insertionSort.h"
+	"bubbleSort.h"
+	"selectionSort.h"
+	"heapSort.h"
+	"mergeSort.h"
+	"quickSort.h"
+	"Dados.h"
+
+1492914342 source:/home/welton/Área de Trabalho/trabalho de APA/APA/Ordenacao2/mergeSort.cpp
+	"mergeSort.h"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+	<string.h>
+
+1492871653 source:/home/welton/Área de Trabalho/trabalho de APA/APA/Ordenacao2/Ordenacao.cpp
+	"Ordenacao.h"
+	<time.h>
+	<sys/time.h>
+	<chrono>
+	<ctime>
+	<stdio.h>
+	<stdlib.h>
+
+1492914384 source:/home/welton/Área de Trabalho/trabalho de APA/APA/Ordenacao2/quickSort.cpp
+	"quickSort.h"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<sys/time.h>
+	<stack>
+	<set>
+	"util.h"
+
+1492914447 source:/home/welton/Área de Trabalho/trabalho de APA/APA/Ordenacao2/selectionSort.cpp
+	"selectionSort.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<sys/time.h>
+	<vector>
+	<chrono>
+	<ctime>
+
+1492871653 source:/home/welton/Área de Trabalho/trabalho de APA/APA/Ordenacao2/util.cpp
+	"util.h"
+	<climits>
+	<cmath>
+	<cstdlib>
+	<cstdio>
+	<sys/timeb.h>
+	<sys/resource.h>
+	<vector>
+	<iostream>
+

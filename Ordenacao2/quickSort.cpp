@@ -25,6 +25,17 @@ void QuickSort::ordena(int* vet, int tam){
 
 }
 
+void QuickSort::ordenaDados(Dados* dados, int tam){
+
+    register unsigned long long int instrucoes = 0;
+
+    this->start_time = chrono::system_clock::now();
+    this->quickSortDados(dados, 0, tam - 1, instrucoes);
+    this->end_time = chrono::system_clock::now();
+    this->numInstrucao = instrucoes;
+
+}
+
 void QuickSort::swapQ(int &a, int &b) {
 
     int tmp;
@@ -140,6 +151,51 @@ void QuickSort::quickSort_I(int* vet, int left, int right, int versao, register 
 
     this->numInstrucao = instrucoes;
 }
+//vet
+void QuickSort::quickSortDados(Dados* dados, int comeco, int fim, register unsigned long long int &instrucoes){
+
+    int pivot[2], aux[2];
+	int i, j;
+
+	//pivot = vet[(comeco+fim)/2];
+	pivot[0] = dados[(comeco+fim)/2].getId();
+	pivot[1] = dados[(comeco+fim)/2].getSalario();
+	i = comeco;
+	j = fim;
+    instrucoes+= 4;
+	while(i <= j){
+		while(dados[i].getSalario() < pivot[1])
+			i++;
+
+		while(dados[j].getSalario() > pivot[1])
+			j--;
+        instrucoes+= 3;
+		if(i <= j){
+//			aux = vet[i];
+//			vet[i] = vet[j];
+//			vet[j] = aux;
+			aux[0] = dados[i].getId();
+			aux[1] = dados[i].getSalario();
+			dados[i].setId(dados[j].getId());
+            dados[i].setSalario(dados[j].getSalario());
+            dados[j].setId(aux[0]);
+            dados[j].setSalario(aux[1]);
+			i++;j--;
+			instrucoes+= 9;
+        }
+	}
+
+	if(j > comeco){
+		quickSortDados(dados, comeco, j,instrucoes);
+        instrucoes+= 2;
+	}
+
+	if(i < fim){
+		quickSortDados(dados, j+1, fim, instrucoes);
+		instrucoes+= 2;
+	}
+}
+
 
 void QuickSort::quickSort(int* vet, int comeco, int fim, register unsigned long long int &instrucoes){
 

@@ -5,6 +5,7 @@
 #include <chrono>
 #include <ctime>
 #include "Ordenacao.h"
+#include "Dados.h"
 
 using namespace std;
 
@@ -17,6 +18,7 @@ class HeapSort : public Ordenacao
     public:
         HeapSort(){ idAlgoritmo = 3; };
         void ordena(int * vet, int tam);
+        void ordenaDados(Dados *dados, int tam);
 
 
 };
